@@ -1,0 +1,101 @@
+<!--
+  ~ Copyright Dansk Bibliotekscenter a/s. Licensed under GPLv3
+  ~ See license text in LICENSE.txt or at https://opensource.dbc.dk/licenses/gpl-3.0/
+  -->
+<project>
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>dk.dbc</groupId>
+  <artifactId>super-pom</artifactId>
+  <version>master-SNAPSHOT</version>
+  <packaging>pom</packaging>
+
+  <distributionManagement>
+    <repository>
+      <id>mavenrepo.dbc.dk</id>
+      <name>mavenrepo</name>
+      <url>http://mavenrepo.dbc.dk/content/repositories/releases</url>
+    </repository>
+    <snapshotRepository>
+      <id>mavenrepo.dbc.dk</id>
+      <name>mavenrepo</name>
+      <url>http://mavenrepo.dbc.dk/content/repositories/snapshots</url>
+    </snapshotRepository>
+  </distributionManagement>
+
+  <repositories>
+    <repository>
+      <id>mavenrepo.dbc.dk</id>
+      <url>http://mavenrepo.dbc.dk/nexus/content/groups/public</url>
+    </repository>
+  </repositories>
+
+  <pluginRepositories>
+    <pluginRepository>
+      <id>mavenrepo.dbc.dk</id>
+      <url>http://mavenrepo.dbc.dk/nexus/content/groups/public</url>
+    </pluginRepository>
+  </pluginRepositories>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <jdk.target.version>1.8</jdk.target.version>
+  </properties>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>pl.project13.maven</groupId>
+        <artifactId>git-commit-id-plugin</artifactId>
+        <version>3.0.1</version>
+        <executions>
+          <execution>
+            <id>get-commit-info</id>
+            <goals>
+              <goal>revision</goal>
+            </goals>
+            <phase>initialize</phase>
+          </execution>
+        </executions>
+        <configuration>
+          <failOnNoGitDirectory>false</failOnNoGitDirectory>
+          <runOnlyOnce>true</runOnlyOnce>
+          <skipPoms>false</skipPoms>
+        </configuration>
+      </plugin>
+    </plugins>
+
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <version>3.8.0</version>
+          <configuration>
+            <source>${jdk.target.version}</source>
+            <target>${jdk.target.version}</target>
+            <testSource>${jdk.target.version}</testSource>
+            <testTarget>${jdk.target.version}</testTarget>
+            <showDeprecation>true</showDeprecation>
+            <showWarnings>true</showWarnings>
+          </configuration>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-jar-plugin</artifactId>
+          <version>3.1.2</version>
+          <configuration>
+            <archive>
+              <manifest>
+                <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
+              </manifest>
+              <manifestEntries>
+                <Implementation-Build>${git.commit.id}@${git.branch}</Implementation-Build>
+              </manifestEntries>
+            </archive>
+          </configuration>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
+</project>
