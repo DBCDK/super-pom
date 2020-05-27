@@ -27,6 +27,7 @@ pipeline {
 				anyOf {
                     branch "master";
 					branch "old-*"
+					branch "java11"
                 }
             }
 			steps {

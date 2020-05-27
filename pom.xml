@@ -7,7 +7,7 @@
 
   <groupId>dk.dbc</groupId>
   <artifactId>super-pom</artifactId>
-  <version>master-SNAPSHOT</version>
+  <version>java11-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <distributionManagement>
@@ -39,7 +39,7 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <jdk.target.version>1.8</jdk.target.version>
+    <jdk.target.version>11</jdk.target.version>
   </properties>
 
   <build>
