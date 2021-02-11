@@ -51,7 +51,7 @@
     <!-- ### compile/import scoped dependencies ### -->
 
     <eclipselink.version>2.7.7</eclipselink.version>
-    <flyway.version>7.5.2</flyway.version>
+    <flyway.version>7.5.3</flyway.version>
     <hazelcast.version>3.12.6</hazelcast.version>
     <jackson.version>2.10.2</jackson.version>
     <jersey.version>2.30</jersey.version>
@@ -64,11 +64,11 @@
 
     <hamcrest.version>2.2</hamcrest.version>
     <junit4.version>4.13.1</junit4.version>
-    <junit5.version>5.7.0</junit5.version>
+    <junit5.version>5.7.1</junit5.version>
     <mockito.version>3.7.7</mockito.version>
     <otj-pg-embedded.version>0.13.3</otj-pg-embedded.version>
     <spotbugs.plugin.version>4.2.0</spotbugs.plugin.version>
-    <spotbugs.annotations.version>4.2.0</spotbugs.annotations.version>
+    <spotbugs.annotations.version>4.2.1</spotbugs.annotations.version>
     <testcontainers.version>1.15.1</testcontainers.version>
   </properties>
 
