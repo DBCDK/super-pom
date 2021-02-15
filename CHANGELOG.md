@@ -3,7 +3,7 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
-## [Unreleased]
+## latest
 ### Changed
 - Update flyway version from 7.2.0 to 7.5.3 [flyway release notes](https://flywaydb.org/documentation/learnmore/releaseNotes.html#7.5.3)
 - Update junit5 version from 5.7.0 to 5.7.1 [junit5 release notes](https://junit.org/junit5/docs/current/release-notes/index.html#release-notes-5.7.1).
@@ -15,7 +15,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - Update maven-compiler-plugin from 3.8.0 to 3.8.1 [maven-compiler-plugin release notes](https://issues.apache.org/jira/secure/ReleaseNote.jspa?projectId=12317225&version=12343484)
 - Update maven-jar-plugin from 3.1.2 to 3.2.0 [maven-jar-plugin release notes](https://issues.apache.org/jira/secure/ReleaseNote.jspa?projectId=12317526&version=12345503)
 
-## latest
+## old-202107
 ### Added
 - Dependencies from microservice-pom
 - surefire and spotbugs plugins from microservice-pom
