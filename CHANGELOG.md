@@ -3,11 +3,11 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
-## Unreleased
+## latest
 ### Added
 - junit-jupiter-params dependency
 
-## latest
+## old-202116
 ### Changed
 - Update flyway version from 7.2.0 to 7.5.3 [flyway release notes](https://flywaydb.org/documentation/learnmore/releaseNotes.html#7.5.3)
 - Update junit5 version from 5.7.0 to 5.7.1 [junit5 release notes](https://junit.org/junit5/docs/current/release-notes/index.html#release-notes-5.7.1).
