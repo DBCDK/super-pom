@@ -5,8 +5,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## Unreleased
 ### Changed
-- Update hazelcast version from 3.12.6 to 4.1 [hazelcast release notes](https://docs.hazelcast.org/docs/rn/#4-1)
+- Update hazelcast version from 3.12.6 to 4.2 [hazelcast release notes](https://docs.hazelcast.org/docs/rn/#4-2)
 - Update microprofile version from 3.3 to 4.0 [microprofile release notes](https://github.com/eclipse/microprofile/releases/tag/4.0)
+- Update snakeyaml version from 1.25 to 1.28 [snakeyaml release notes](https://bitbucket.org/asomov/snakeyaml/wiki/Changes)
 
 ## latest
 ### Changed
