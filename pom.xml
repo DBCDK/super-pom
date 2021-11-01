@@ -45,7 +45,7 @@
 
     <jakartaee.version>8.0.0</jakartaee.version>
     <javaee.version>8.0</javaee.version>
-    <microprofile.version>4.0</microprofile.version>
+    <microprofile.version>4.1</microprofile.version>
 
 
     <!-- ### compile/import scoped dependencies ### -->
@@ -54,22 +54,22 @@
     <flyway.version>7.5.3</flyway.version>
     <hazelcast.version>4.2</hazelcast.version>
     <jackson.version>2.10.2</jackson.version>
-    <jersey.version>2.30</jersey.version>
+    <jersey.version>2.34</jersey.version>
     <logback.version>1.2.3</logback.version>
-    <postgresql-driver.version>42.2.18</postgresql-driver.version>
-    <slf4j.version>1.7.30</slf4j.version>
+    <postgresql-driver.version>42.3.1</postgresql-driver.version>
+    <slf4j.version>1.7.32</slf4j.version>
     <snakeyaml.version>1.28</snakeyaml.version>
 
     <!-- ### test scoped dependencies ### -->
 
     <hamcrest.version>2.2</hamcrest.version>
-    <junit4.version>4.13.1</junit4.version>
-    <junit5.version>5.7.1</junit5.version>
-    <mockito.version>3.7.7</mockito.version>
+    <junit4.version>4.13.2</junit4.version>
+    <junit5.version>5.8.1</junit5.version>
+    <mockito.version>3.12.4</mockito.version>
     <otj-pg-embedded.version>0.13.3</otj-pg-embedded.version>
-    <spotbugs.plugin.version>4.2.0</spotbugs.plugin.version>
-    <spotbugs.annotations.version>4.2.1</spotbugs.annotations.version>
-    <testcontainers.version>1.15.1</testcontainers.version>
+    <spotbugs.plugin.version>4.4.2.2</spotbugs.plugin.version>
+    <spotbugs.annotations.version>4.4.2</spotbugs.annotations.version>
+    <testcontainers.version>1.16.2</testcontainers.version>
   </properties>
 
   <dependencyManagement>
@@ -126,7 +126,7 @@
       <dependency>
         <groupId>org.eclipse.microprofile.health</groupId>
         <artifactId>microprofile-health-api</artifactId>
-        <version>3.0</version>
+        <version>3.1</version>
         <scope>provided</scope>
       </dependency>
       <dependency>
