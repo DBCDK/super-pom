@@ -29,6 +29,7 @@ pipeline {
                     branch "latest";
 					branch "old-*"
 					branch "java11"
+					branch "java11-old-*"
                 }
             }
 			steps {
