@@ -3,6 +3,23 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+## Unreleased
+### Changed
+- Update flyway version from 7.5.3 to 8.0.2 [flyway release notes](https://flywaydb.org/documentation/learnmore/releaseNotes.html#8.0.2)
+- Update hazelcast version from 3.12.6 to 4.2 [hazelcast release notes](https://docs.hazelcast.org/docs/rn/#4-2)
+- Update jackson version from 2.10.2 to 2.12.4 [jackson release notes](https://github.com/FasterXML/jackson/wiki/Jackson-Release-2.12.4)
+- Update jersey version from 2.30 to 2.34 [jersey release notes](https://eclipse-ee4j.github.io/jersey.github.io/release-notes/2.34.html)
+- Update junit4 version from 4.13.1 to 4.13.2 [junit4 release notes](https://github.com/junit-team/junit4/blob/HEAD/doc/ReleaseNotes4.13.2.md)
+- Update junit5 version from 5.7.1 to 5.8.1 [junit5 release notes](https://junit.org/junit5/docs/current/release-notes/index.html#release-notes-5.8.1)
+- Update microprofile version from 3.3 to 4.1 [microprofile release notes](https://github.com/eclipse/microprofile/releases/tag/4.1)
+- Update mockito version from 3.7.7 to 3.12.4 [mockito release notes](https://github.com/mockito/mockito/releases/tag/v3.12.4)
+- Update postgresql driver version from 42.2.18 to 42.3.1 [postrgesql release notes](https://jdbc.postgresql.org/documentation/changelog.html#version_42.3.1)
+- Update slf4j version from 1.7.30 to 1.7.32 [slf4j release notes](http://www.slf4j.org/news.html)
+- Update snakeyaml version from 1.25 to 1.28 [snakeyaml release notes](https://bitbucket.org/asomov/snakeyaml/wiki/Changes)
+- Update spotbugs.annotations.version from 4.2.1 to 4.4.2
+- Update spotbugs.plugin.version from 4.2.0 to 4.4.2.2
+- Update testcontainers version from 1.15.1 to 1.16.2 [testcontainers release notes](https://github.com/testcontainers/testcontainers-java/releases/tag/1.16.2)
+
 ## latest
 ### Added
 - junit-jupiter-params dependency
