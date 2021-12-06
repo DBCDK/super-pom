@@ -3,7 +3,7 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
-## Unreleased
+## latest
 ### Changed
 - Update flyway version from 7.5.3 to 8.0.2 [flyway release notes](https://flywaydb.org/documentation/learnmore/releaseNotes.html#8.0.2)
 - Update hazelcast version from 3.12.6 to 4.2 [hazelcast release notes](https://docs.hazelcast.org/docs/rn/#4-2)
@@ -20,7 +20,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - Update spotbugs.plugin.version from 4.2.0 to 4.4.2.2
 - Update testcontainers version from 1.15.1 to 1.16.2 [testcontainers release notes](https://github.com/testcontainers/testcontainers-java/releases/tag/1.16.2)
 
-## latest
+## old-202149
 ### Added
 - junit-jupiter-params dependency
 
