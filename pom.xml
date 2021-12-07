@@ -14,26 +14,26 @@
     <repository>
       <id>mavenrepo.dbc.dk</id>
       <name>mavenrepo</name>
-      <url>http://mavenrepo.dbc.dk/content/repositories/releases</url>
+      <url>https://mavenrepo.dbc.dk/content/repositories/releases</url>
     </repository>
     <snapshotRepository>
       <id>mavenrepo.dbc.dk</id>
       <name>mavenrepo</name>
-      <url>http://mavenrepo.dbc.dk/content/repositories/snapshots</url>
+      <url>https://mavenrepo.dbc.dk/content/repositories/snapshots</url>
     </snapshotRepository>
   </distributionManagement>
 
   <repositories>
     <repository>
       <id>mavenrepo.dbc.dk</id>
-      <url>http://mavenrepo.dbc.dk/nexus/content/groups/public</url>
+      <url>https://mavenrepo.dbc.dk/nexus/content/groups/public</url>
     </repository>
   </repositories>
 
   <pluginRepositories>
     <pluginRepository>
       <id>mavenrepo.dbc.dk</id>
-      <url>http://mavenrepo.dbc.dk/nexus/content/groups/public</url>
+      <url>https://mavenrepo.dbc.dk/nexus/content/groups/public</url>
     </pluginRepository>
   </pluginRepositories>
 
