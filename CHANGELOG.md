@@ -3,6 +3,10 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+## [Unreleased]
+### Changed
+- Update postgresql driver version from 42.3.1 to 42.3.2 [postrgesql release notes](https://jdbc.postgresql.org/documentation/changelog.html#version_42.3.2)
+
 ## latest
 ### Changed
 - Update flyway version from 7.5.3 to 8.0.2 [flyway release notes](https://flywaydb.org/documentation/learnmore/releaseNotes.html#8.0.2)
