@@ -5,7 +5,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 ### Changed
+- Update eclipselink version from 2.7.7 to 2.7.9
+- Update flyway version from 8.0.2 to 8.5.0 [flyway release notes](https://flywaydb.org/documentation/learnmore/releaseNotes.html#8.5.0)
+- Update junit5 version from 5.8.1 to 5.8.2 [junit5 release notes](https://junit.org/junit5/docs/current/release-notes/index.html#release-notes-5.8.2)
+- Update mockito version from 3.12.4 to 4.3.1 [mockito release notes](https://github.com/mockito/mockito/releases/tag/v4.3.1)
 - Update postgresql driver version from 42.3.1 to 42.3.2 [postrgesql release notes](https://jdbc.postgresql.org/documentation/changelog.html#version_42.3.2)
+- Update spotbugs.plugin.version from 4.4.2.2 to 4.5.3.0
+- Update spotbugs.annotations.version from 4.4.2 to 4.5.3
+- Update testcontainers version from 1.16.2 to 1.16.3 [testcontainers release notes](https://github.com/testcontainers/testcontainers-java/releases/tag/1.16.3)
 
 ## latest
 ### Changed
