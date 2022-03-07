@@ -3,7 +3,7 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
-## [Unreleased]
+## latest
 ### Changed
 - Update eclipselink version from 2.7.7 to 2.7.9
 - Update flyway version from 8.0.2 to 8.5.0 [flyway release notes](https://flywaydb.org/documentation/learnmore/releaseNotes.html#8.5.0)
@@ -14,7 +14,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - Update spotbugs.annotations.version from 4.4.2 to 4.5.3
 - Update testcontainers version from 1.16.2 to 1.16.3 [testcontainers release notes](https://github.com/testcontainers/testcontainers-java/releases/tag/1.16.3)
 
-## latest
+## old-202210
 ### Changed
 - Update flyway version from 7.5.3 to 8.0.2 [flyway release notes](https://flywaydb.org/documentation/learnmore/releaseNotes.html#8.0.2)
 - Update hazelcast version from 3.12.6 to 4.2 [hazelcast release notes](https://docs.hazelcast.org/docs/rn/#4-2)
