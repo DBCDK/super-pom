@@ -3,10 +3,10 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
-## old-202213
+## latest
 - No changes
 
-## latest
+## old-202213
 ### Changed
 - Update eclipselink version from 2.7.7 to 2.7.9
 - Update flyway version from 8.0.2 to 8.5.0 [flyway release notes](https://flywaydb.org/documentation/learnmore/releaseNotes.html#8.5.0)
