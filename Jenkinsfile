@@ -1,38 +1,37 @@
 #!groovy
 
-def workerNode = "devel10"
+def workerNode = "devel11"
 
 pipeline {
-	agent {label workerNode}
-	tools {
+    agent {label workerNode}
+    tools {
         maven "Maven 3"
     }
-	triggers {
-		pollSCM("H/05 * * * *")
-	}
-	stages {
-		stage("clear workspace") {
-			steps {
-				deleteDir()
-				checkout scm
-			}
-		}
-		stage("verify") {
-			steps {
+    triggers {
+        pollSCM("H/05 * * * *")
+    }
+    stages {
+        stage("clear workspace") {
+            steps {
+                deleteDir()
+                checkout scm
+            }
+        }
+        stage("verify") {
+            steps {
                 sh "mvn verify"
-			}
-		}
-		stage("deploy") {
-		    when {
-				anyOf {
-                    branch "master";
-                    branch "latest";
-					branch "old-*"
+            }
+        }
+        stage("deploy") {
+            when {
+                anyOf {
+                    branch "java17"
+                    branch "java17-old-*"
                 }
             }
-			steps {
+            steps {
                 sh "mvn deploy"
-			}
-		}
-	}
+            }
+        }
+    }
 }

@@ -7,7 +7,7 @@
 
   <groupId>dk.dbc</groupId>
   <artifactId>super-pom</artifactId>
-  <version>master-SNAPSHOT</version>
+  <version>java17-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <distributionManagement>
@@ -39,26 +39,24 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <jdk.target.version>1.8</jdk.target.version>
+    <jdk.target.version>17</jdk.target.version>
 
     <!-- ### provided scoped dependencies ### -->
 
-    <jakartaee.version>8.0.0</jakartaee.version>
-    <javaee.version>8.0</javaee.version>
-    <microprofile.version>4.1</microprofile.version>
-
+    <jakartaee.version>10.0.0</jakartaee.version>
+    <microprofile.version>5.0</microprofile.version>
 
     <!-- ### compile/import scoped dependencies ### -->
 
-    <eclipselink.version>2.7.9</eclipselink.version>
+    <eclipselink.version>3.0.2</eclipselink.version>
     <flyway.version>8.5.0</flyway.version>
     <hazelcast.version>4.2</hazelcast.version>
-    <jackson.version>2.12.4</jackson.version>
-    <jersey.version>2.34</jersey.version>
+    <jackson.version>2.13.0</jackson.version>
+    <jersey.version>3.0.3</jersey.version>
     <logback.version>1.2.3</logback.version>
     <postgresql-driver.version>42.3.2</postgresql-driver.version>
     <slf4j.version>1.7.32</slf4j.version>
-    <snakeyaml.version>1.28</snakeyaml.version>
+    <snakeyaml.version>1.29</snakeyaml.version>
 
     <!-- ### test scoped dependencies ### -->
 
@@ -90,19 +88,6 @@
         <scope>provided</scope>
       </dependency>
 
-      <dependency>
-        <groupId>javax</groupId>
-        <artifactId>javaee-api</artifactId>
-        <version>${javaee.version}</version>
-        <scope>provided</scope>
-      </dependency>
-      <dependency>
-        <groupId>javax</groupId>
-        <artifactId>javaee-web-api</artifactId>
-        <version>${javaee.version}</version>
-        <scope>provided</scope>
-      </dependency>
-
       <!-- Baseline platform definition that optimizes Enterprise Java for a microservices architecture -->
       <dependency>
         <groupId>org.eclipse.microprofile</groupId>
@@ -114,49 +99,49 @@
       <dependency>
         <groupId>org.eclipse.microprofile.config</groupId>
         <artifactId>microprofile-config-api</artifactId>
-        <version>2.0</version>
+        <version>3.0</version>
         <scope>provided</scope>
       </dependency>
       <dependency>
         <groupId>org.eclipse.microprofile.fault-tolerance</groupId>
         <artifactId>microprofile-fault-tolerance-api</artifactId>
-        <version>3.0</version>
+        <version>4.0</version>
         <scope>provided</scope>
       </dependency>
       <dependency>
         <groupId>org.eclipse.microprofile.health</groupId>
         <artifactId>microprofile-health-api</artifactId>
-        <version>3.1</version>
+        <version>4.0</version>
         <scope>provided</scope>
       </dependency>
       <dependency>
         <groupId>org.eclipse.microprofile.metrics</groupId>
         <artifactId>microprofile-metrics-api</artifactId>
-        <version>3.0</version>
+        <version>4.0</version>
         <scope>provided</scope>
       </dependency>
       <dependency>
         <groupId>org.eclipse.microprofile.jwt</groupId>
         <artifactId>microprofile-jwt-auth-api</artifactId>
-        <version>1.2</version>
+        <version>2.0</version>
         <scope>provided</scope>
       </dependency>
       <dependency>
         <groupId>org.eclipse.microprofile.openapi</groupId>
         <artifactId>microprofile-openapi-api</artifactId>
-        <version>2.0</version>
+        <version>3.0</version>
         <scope>provided</scope>
       </dependency>
       <dependency>
         <groupId>org.eclipse.microprofile.rest.client</groupId>
         <artifactId>microprofile-rest-client-api</artifactId>
-        <version>2.0</version>
+        <version>3.0</version>
         <scope>provided</scope>
       </dependency>
       <dependency>
         <groupId>org.eclipse.microprofile.opentracing</groupId>
         <artifactId>microprofile-opentracing-api</artifactId>
-        <version>2.0</version>
+        <version>3.0</version>
         <scope>provided</scope>
       </dependency>
 
