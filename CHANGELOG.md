@@ -3,7 +3,7 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
-## Unreleased
+## latest
 ### Added
 - smallrye-graphql-servlet and smallrye-graphql-ui-graphiql dependencies [smallrye-graphql](https://smallrye.io/smallrye-graphql/1.6.0/)
 ### Changed
@@ -13,7 +13,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - Update mockito version from 4.3.1 to 4.6.1 [mockito release notes](https://github.com/mockito/mockito/releases/tag/v4.6.1)
 - Update testcontainers version from 1.16.3 to 1.17.3 [testcontainers release notes](https://github.com/testcontainers/testcontainers-java/releases/tag/1.17.3)
 
-## latest
+## old-202232
 - No changes
 
 ## old-202213
