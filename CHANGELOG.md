@@ -16,6 +16,16 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - javaee artifacts, moving forward only jakartaee is supported
 
 ## latest
+### Added
+- smallrye-graphql-servlet and smallrye-graphql-ui-graphiql dependencies [smallrye-graphql](https://smallrye.io/smallrye-graphql/1.6.0/)
+### Changed
+- Update flyway version from 8.5.0 to 9.0.4 [flyway release notes](https://flywaydb.org/documentation/learnmore/releaseNotes.html#9.0.4)
+- Update jackson version from 2.12.4 to 2.12.7 [jackson release notes](https://github.com/FasterXML/jackson/wiki/Jackson-Release-2.12.4)
+- Update junit5 version from 5.8.2 to 5.9.0 [junit5 release notes](https://junit.org/junit5/docs/current/release-notes/index.html#release-notes-5.9.0)
+- Update mockito version from 4.3.1 to 4.6.1 [mockito release notes](https://github.com/mockito/mockito/releases/tag/v4.6.1)
+- Update testcontainers version from 1.16.3 to 1.17.3 [testcontainers release notes](https://github.com/testcontainers/testcontainers-java/releases/tag/1.17.3)
+
+## old-202232
 - No changes
 
 ## old-202213
