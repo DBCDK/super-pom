@@ -5,6 +5,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## latest
 ### Added
+- maven-pmd-plugin 3.17.0
 - smallrye-graphql-servlet and smallrye-graphql-ui-graphiql dependencies [smallrye-graphql](https://smallrye.io/smallrye-graphql/1.6.0/)
 ### Changed
 - Update flyway version from 8.5.0 to 9.0.4 [flyway release notes](https://flywaydb.org/documentation/learnmore/releaseNotes.html#9.0.4)
