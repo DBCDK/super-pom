@@ -16,6 +16,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - javaee artifacts, moving forward only jakartaee is supported
 
 ## latest
+- No changes
+
+## old-202236
 ### Added
 - maven-pmd-plugin 3.17.0
 - smallrye-graphql-servlet and smallrye-graphql-ui-graphiql dependencies [smallrye-graphql](https://smallrye.io/smallrye-graphql/1.6.0/)
