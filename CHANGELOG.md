@@ -18,6 +18,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## latest
 - No changes
 
+## old-202239
+- No changes
+
 ## old-202236
 ### Added
 - maven-pmd-plugin 3.17.0
