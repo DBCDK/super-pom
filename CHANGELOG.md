@@ -3,6 +3,12 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+## unreleased
+### Added
+- kafka-clients 3.3.0 [kafka release notes](https://archive.apache.org/dist/kafka/3.3.0/RELEASE_NOTES.html)
+### Changed
+- Update postgresql driver version from 42.3.2 to 42.5.0 [postgresql release notes](https://jdbc.postgresql.org/changelogs/)
+
 ## latest
 - No changes
 
