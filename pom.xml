@@ -7,7 +7,7 @@
 
   <groupId>dk.dbc</groupId>
   <artifactId>super-pom</artifactId>
-  <version>latest-SNAPSHOT</version>
+  <version>old-202241</version>
   <packaging>pom</packaging>
 
   <distributionManagement>
