@@ -53,7 +53,7 @@
     <eclipselink.version>2.7.9</eclipselink.version>
     <flyway.version>9.0.4</flyway.version>
     <hazelcast.version>4.2</hazelcast.version>
-    <jackson.version>2.12.7</jackson.version>
+    <jackson.version>2.13.4.1</jackson.version>
     <jersey.version>2.36</jersey.version>
     <logback.version>1.2.3</logback.version>
     <postgresql-driver.version>42.5.0</postgresql-driver.version>
