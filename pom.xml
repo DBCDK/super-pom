@@ -54,7 +54,7 @@
     <flyway.version>9.0.4</flyway.version>
     <hazelcast.version>4.2</hazelcast.version>
     <jackson.version>2.12.7</jackson.version>
-    <jersey.version>2.34</jersey.version>
+    <jersey.version>2.36</jersey.version>
     <logback.version>1.2.3</logback.version>
     <postgresql-driver.version>42.5.0</postgresql-driver.version>
     <slf4j.version>1.7.32</slf4j.version>
@@ -68,8 +68,8 @@
     <junit5.version>5.9.0</junit5.version>
     <mockito.version>4.6.1</mockito.version>
     <otj-pg-embedded.version>0.13.3</otj-pg-embedded.version>
-    <spotbugs.plugin.version>4.5.3.0</spotbugs.plugin.version>
-    <spotbugs.annotations.version>4.5.3</spotbugs.annotations.version>
+    <spotbugs.plugin.version>4.7.2.2</spotbugs.plugin.version>
+    <spotbugs.annotations.version>4.7.3</spotbugs.annotations.version>
     <testcontainers.version>1.17.3</testcontainers.version>
   </properties>
 
