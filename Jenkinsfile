@@ -26,8 +26,6 @@ pipeline {
 		    when {
 				anyOf {
                     branch "master";
-                    branch "latest";
-					branch "old-*"
                 }
             }
 			steps {
