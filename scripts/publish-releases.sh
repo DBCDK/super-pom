@@ -25,16 +25,23 @@ git pull
 for JDK in java11 java8
 do
   # create -old- branch
-  echo git checkout $JDK
-  echo git checkout -b "$JDK-$oldVersion"
-  echo mvn versions:set -DgenerateBackupPoms=false -DnewVersion="$JDK-$oldVersion"
-  echo git commit -a -m "Autoupdate version to $JDK-$oldVersion"
-  echo git push --set-upstream origin "$JDK-$oldVersion"
+  git checkout $JDK
+  git checkout -b "$JDK-$oldVersion"
+  mvn versions:set -DgenerateBackupPoms=false -DnewVersion="$JDK-$oldVersion"
+  git commit -a -m "Autoupdate version to $JDK-$oldVersion"
+  git push --set-upstream origin "$JDK-$oldVersion"
 
   # update $JDK branch
-  echo git checkout $JDK
-  echo git merge master
+  git checkout $JDK
+  git merge master
+
+  if [[ "$JDK" == "java8" ]]; then
+    # legacy latest version is based on java 8
+    # will be deprecated in the near future
+    git checkout latest
+    git merge $JDK
+  fi
 done
 
-echo git checkout master
-echo git push --all origin
+git checkout master
+git push --all origin
