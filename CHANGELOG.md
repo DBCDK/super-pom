@@ -3,6 +3,12 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+## unreleased
+### Changed
+- jersey version updated from 2.34 to 2.36
+- spotbugs-annotations updated from 4.5.3 to 4.7.3 [spotbugs release notes](https://github.com/spotbugs/spotbugs/releases/tag/4.7.3)
+- spotbugs-maven-plugin updated from 4.5.3.0 to 4.7.2.2 [spotbugs maven plugin release notes](https://github.com/spotbugs/spotbugs-maven-plugin/releases/tag/spotbugs-maven-plugin-4.7.2.2)
+
 ## latest
 ### Added
 - kafka-clients 3.3.0 [kafka release notes](https://archive.apache.org/dist/kafka/3.3.0/RELEASE_NOTES.html)
