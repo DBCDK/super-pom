@@ -3,6 +3,27 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+## unreleased
+### Added
+- Add jakarta.jakartaee-core-api dependency
+### Changed
+- Update eclipselink version from 2.7.9 to 4.0.0 [eclipselink release notes](https://www.eclipse.org/eclipselink/releases/4.0.php)
+- Update flyway version from 9.0.4 to 9.11.0 [flyway release notes](https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html)
+- Update hazelcast version from 4.2 to 5.1.1 [hazelcast release notes](https://docs.hazelcast.com/hazelcast/5.1/release-notes/5-1-1)
+- Update jackson version from 2.12.7 to 2.13.4 [jackson release notes](https://github.com/FasterXML/jackson/wiki/Jackson-Release-2.13.4)
+- Update jakartaee version updated from 8.0.0 to 10.0.0
+- Update jersey version updated from 2.36 to 3.1.0 [jersey release notes](https://github.com/eclipse-ee4j/jersey/releases/tag/3.1.0)
+- Update junit5 version from 5.9.0 to 5.9.1 [junit5 release notes](https://junit.org/junit5/docs/current/release-notes/index.html#release-notes-5.9.1)
+- Update microprofile version from 4.1 to 5.0 [microprofile release notes](https://github.com/eclipse/microprofile/releases/tag/5.0)
+- Update mockito version from 4.6.1 to 4.11.0 [mockito release notes](https://github.com/mockito/mockito/releases/tag/v4.11.0)
+- Update postgresql driver version from 42.5.0 to 42.5.1 [postgresql release notes](https://jdbc.postgresql.org/changelogs/)
+- Update smallrye-graphql-servlet and smallrye-graphql-ui-graphiql version from 1.6.0 to 2.0.1 [smallrye-graphql](https://smallrye.io/smallrye-graphql/2.0.1/)
+- Update snakeyaml version from 1.28 to 1.33 [snakeyaml release notes](https://bitbucket.org/snakeyaml/snakeyaml/wiki/Changes)
+- Update spotbugs-maven-plugin version from 4.7.2.2 to 4.7.3.0 [spotbugs maven plugin release notes](https://github.com/spotbugs/spotbugs-maven-plugin/releases/tag/spotbugs-maven-plugin-4.7.3.0)
+- Update testcontainers version from 1.17.3 to 1.17.6 [testcontainers release notes](https://github.com/testcontainers/testcontainers-java/releases/tag/1.17.6)
+### Removed
+- Remove otj-pg-embedded dependency, use [dbc-commons-testcontainers-postgres](https://gitlab.dbc.dk/pu/test/dbc-commons-testcontainers-postgres) instead
+
 ## latest
 ### Changed
 - jersey version updated from 2.34 to 2.36

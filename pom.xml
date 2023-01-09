@@ -3,7 +3,7 @@
 
   <groupId>dk.dbc</groupId>
   <artifactId>super-pom</artifactId>
-  <version>master-SNAPSHOT</version>
+  <version>payara6-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <distributionManagement>
@@ -35,39 +35,36 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <jdk.target.version>1.8</jdk.target.version>
+    <jdk.target.version>11</jdk.target.version>
 
     <!-- ### provided scoped dependencies ### -->
 
-    <jakartaee.version>8.0.0</jakartaee.version>
-    <javaee.version>8.0</javaee.version>
-    <microprofile.version>4.1</microprofile.version>
-
+    <jakartaee.version>10.0.0</jakartaee.version>
+    <microprofile.version>5.0</microprofile.version>
 
     <!-- ### compile/import scoped dependencies ### -->
 
-    <eclipselink.version>2.7.9</eclipselink.version>
-    <flyway.version>9.0.4</flyway.version>
-    <hazelcast.version>4.2</hazelcast.version>
-    <jackson.version>2.12.7</jackson.version>
-    <jersey.version>2.36</jersey.version>
+    <eclipselink.version>4.0.0</eclipselink.version>
+    <flyway.version>9.11.0</flyway.version>
+    <hazelcast.version>5.1.1</hazelcast.version>
+    <jackson.version>2.13.4</jackson.version>
+    <jersey.version>3.1.0</jersey.version>
     <kafka.version>3.3.0</kafka.version>
     <logback.version>1.2.3</logback.version>
-    <postgresql-driver.version>42.5.0</postgresql-driver.version>
+    <postgresql-driver.version>42.5.1</postgresql-driver.version>
     <slf4j.version>1.7.32</slf4j.version>
-    <smallrye-graphql.version>1.6.0</smallrye-graphql.version> <!-- switch to 2.x branch for jakarta namespace -->
-    <snakeyaml.version>1.28</snakeyaml.version>
+    <smallrye-graphql.version>2.0.1</smallrye-graphql.version>
+    <snakeyaml.version>1.33</snakeyaml.version>
 
     <!-- ### test scoped dependencies ### -->
 
     <hamcrest.version>2.2</hamcrest.version>
     <junit4.version>4.13.2</junit4.version>
-    <junit5.version>5.9.0</junit5.version>
-    <mockito.version>4.6.1</mockito.version>
-    <otj-pg-embedded.version>0.13.3</otj-pg-embedded.version>
-    <spotbugs.plugin.version>4.7.2.2</spotbugs.plugin.version>
+    <junit5.version>5.9.1</junit5.version>
+    <mockito.version>4.11.0</mockito.version>
+    <spotbugs.plugin.version>4.7.3.0</spotbugs.plugin.version>
     <spotbugs.annotations.version>4.7.3</spotbugs.annotations.version>
-    <testcontainers.version>1.17.3</testcontainers.version>
+    <testcontainers.version>1.17.6</testcontainers.version>
   </properties>
 
   <dependencyManagement>
@@ -83,21 +80,14 @@
       </dependency>
       <dependency>
         <groupId>jakarta.platform</groupId>
-        <artifactId>jakarta.jakartaee-web-api</artifactId>
+        <artifactId>jakarta.jakartaee-core-api</artifactId>
         <version>${jakartaee.version}</version>
         <scope>provided</scope>
       </dependency>
-
       <dependency>
-        <groupId>javax</groupId>
-        <artifactId>javaee-api</artifactId>
-        <version>${javaee.version}</version>
-        <scope>provided</scope>
-      </dependency>
-      <dependency>
-        <groupId>javax</groupId>
-        <artifactId>javaee-web-api</artifactId>
-        <version>${javaee.version}</version>
+        <groupId>jakarta.platform</groupId>
+        <artifactId>jakarta.jakartaee-web-api</artifactId>
+        <version>${jakartaee.version}</version>
         <scope>provided</scope>
       </dependency>
 
