@@ -6,6 +6,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## unreleased
 ### Added
 - Add jakarta.jakartaee-core-api dependency
+- Add jakarta.xml.bind-api and jaxb-impl dependencies
 ### Changed
 - Update eclipselink version from 2.7.9 to 4.0.0 [eclipselink release notes](https://www.eclipse.org/eclipselink/releases/4.0.php)
 - Update flyway version from 9.0.4 to 9.11.0 [flyway release notes](https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html)

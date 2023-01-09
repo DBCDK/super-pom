@@ -48,6 +48,7 @@
     <flyway.version>9.11.0</flyway.version>
     <hazelcast.version>5.1.1</hazelcast.version>
     <jackson.version>2.13.4</jackson.version>
+    <jakarta-xml-bind.version>4.0.0</jakarta-xml-bind.version>
     <jersey.version>3.1.0</jersey.version>
     <kafka.version>3.3.0</kafka.version>
     <logback.version>1.2.3</logback.version>
@@ -148,7 +149,21 @@
         <scope>provided</scope>
       </dependency>
 
-      <!-- ### compile/import scoped dependencies ### -->
+
+      <!-- ### compile/import/runtime scoped dependencies ### -->
+
+      <!-- Jakarta XML binding -->
+      <dependency>
+        <groupId>jakarta.xml.bind</groupId>
+        <artifactId>jakarta.xml.bind-api</artifactId>
+        <version>${jakarta-xml-bind.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.sun.xml.bind</groupId>
+        <artifactId>jaxb-impl</artifactId>
+        <version>${jakarta-xml-bind.version}</version>
+        <scope>runtime</scope>
+      </dependency>
 
       <dependency>
         <groupId>org.eclipse.persistence</groupId>
