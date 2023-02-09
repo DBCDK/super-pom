@@ -52,6 +52,14 @@
     <jersey.version>3.1.0</jersey.version>
     <kafka.version>3.3.0</kafka.version>
     <logback.version>1.2.11</logback.version>
+    <microprofile-config-api.version>3.0</microprofile-config-api.version>
+    <microprofile-fault-tolerance-api.version>4.0</microprofile-fault-tolerance-api.version>
+    <microprofile-health-api.version>4.0</microprofile-health-api.version>
+    <microprofile-metrics-api.version>4.0</microprofile-metrics-api.version>
+    <microprofile-jwt-auth-api.version>2.0</microprofile-jwt-auth-api.version>
+    <microprofile-openapi-api.version>3.0</microprofile-openapi-api.version>
+    <microprofile-rest-client-api.version>3.0</microprofile-rest-client-api.version>
+    <microprofile-opentracing-api.version>3.0</microprofile-opentracing-api.version>
     <postgresql-driver.version>42.5.1</postgresql-driver.version>
     <slf4j.version>1.7.36</slf4j.version>
     <smallrye-graphql.version>2.0.1</smallrye-graphql.version>
@@ -103,49 +111,49 @@
       <dependency>
         <groupId>org.eclipse.microprofile.config</groupId>
         <artifactId>microprofile-config-api</artifactId>
-        <version>3.0</version>
+        <version>${microprofile-config-api.version}</version>
         <scope>provided</scope>
       </dependency>
       <dependency>
         <groupId>org.eclipse.microprofile.fault-tolerance</groupId>
         <artifactId>microprofile-fault-tolerance-api</artifactId>
-        <version>4.0</version>
+        <version>${microprofile-fault-tolerance-api.version}</version>
         <scope>provided</scope>
       </dependency>
       <dependency>
         <groupId>org.eclipse.microprofile.health</groupId>
         <artifactId>microprofile-health-api</artifactId>
-        <version>4.0</version>
+        <version>${microprofile-health-api.version}</version>
         <scope>provided</scope>
       </dependency>
       <dependency>
         <groupId>org.eclipse.microprofile.metrics</groupId>
         <artifactId>microprofile-metrics-api</artifactId>
-        <version>4.0</version>
+        <version>${microprofile-metrics-api.version}</version>
         <scope>provided</scope>
       </dependency>
       <dependency>
         <groupId>org.eclipse.microprofile.jwt</groupId>
         <artifactId>microprofile-jwt-auth-api</artifactId>
-        <version>2.0</version>
+        <version>${microprofile-jwt-auth-api.version}</version>
         <scope>provided</scope>
       </dependency>
       <dependency>
         <groupId>org.eclipse.microprofile.openapi</groupId>
         <artifactId>microprofile-openapi-api</artifactId>
-        <version>3.0</version>
+        <version>${microprofile-openapi-api.version}</version>
         <scope>provided</scope>
       </dependency>
       <dependency>
         <groupId>org.eclipse.microprofile.rest.client</groupId>
         <artifactId>microprofile-rest-client-api</artifactId>
-        <version>3.0</version>
+        <version>${microprofile-rest-client-api.version}</version>
         <scope>provided</scope>
       </dependency>
       <dependency>
         <groupId>org.eclipse.microprofile.opentracing</groupId>
         <artifactId>microprofile-opentracing-api</artifactId>
-        <version>3.0</version>
+        <version>${microprofile-opentracing-api.version}</version>
         <scope>provided</scope>
       </dependency>
 
