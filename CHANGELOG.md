@@ -3,7 +3,7 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
-## unreleased
+## latest
 ### Added
 - Add jakarta.jakartaee-core-api dependency
 - Add jakarta.xml.bind-api and jaxb-impl dependencies
@@ -28,7 +28,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ### Removed
 - Remove otj-pg-embedded dependency, use [dbc-commons-testcontainers-postgres](https://gitlab.dbc.dk/pu/test/dbc-commons-testcontainers-postgres) instead
 
-## latest
+## old-payara5
 ### Changed
 - jersey version updated from 2.34 to 2.36
 - spotbugs-annotations updated from 4.5.3 to 4.7.3 [spotbugs release notes](https://github.com/spotbugs/spotbugs/releases/tag/4.7.3)
