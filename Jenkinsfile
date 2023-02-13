@@ -25,7 +25,7 @@ pipeline {
 		stage("deploy") {
 		    when {
 				anyOf {
-                    branch "payara6"
+                    branch "master"
                 }
             }
 			steps {
