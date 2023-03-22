@@ -3,6 +3,14 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+## unreleased
+### Added
+- Add maven-failsafe-plugin dependency
+### Changed
+- Update maven-compiler-plugin version from 3.8.1 to 3.11.0 [release notes](https://github.com/apache/maven-compiler-plugin/releases/tag/maven-compiler-plugin-3.11.0)
+- Update maven-pmd-plugin version from 3.17.0 to 3.20.0 [release notes](https://maven.apache.org/plugins/maven-pmd-plugin/releasenotes.html#version-3-20-0)
+- Update maven-surefire-plugin version from 2.22.2 to 3.0.0 [release notes](https://github.com/apache/maven-surefire/releases/tag/surefire-3.0.0)
+
 ## latest
 ### Added
 - Add jakarta.jakartaee-core-api dependency
