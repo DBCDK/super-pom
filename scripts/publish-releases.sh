@@ -22,12 +22,13 @@ read -p "Press enter to continue"
 git checkout master
 git pull
 
-for JDK in java11 java8
+for JDK in java17 java11 java8
 do
   # create -old- branch
   git checkout $JDK
   git checkout -b "$JDK-$oldVersion"
   mvn versions:set -DgenerateBackupPoms=false -DnewVersion="$JDK-$oldVersion"
+  mvn install
   git commit -a -m "Autoupdate version to $JDK-$oldVersion"
   git push --set-upstream origin "$JDK-$oldVersion"
 
