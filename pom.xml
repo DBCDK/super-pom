@@ -74,6 +74,10 @@
     <spotbugs.plugin.version>4.7.3.0</spotbugs.plugin.version>
     <spotbugs.annotations.version>4.7.3</spotbugs.annotations.version>
     <testcontainers.version>1.17.6</testcontainers.version>
+
+    <!-- ### sonarqube properties ### -->
+    <sonar.host.url>http://sonarqube.dbc.dk</sonar.host.url>
+    <sonar.sources>src/main</sonar.sources>
   </properties>
 
   <dependencyManagement>
@@ -490,6 +494,11 @@
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-pmd-plugin</artifactId>
           <version>3.20.0</version>
+        </plugin>
+        <plugin>
+          <groupId>org.sonarsource.scanner.maven</groupId>
+          <artifactId>sonar-maven-plugin</artifactId>
+          <version>3.9.1.2184</version>
         </plugin>
       </plugins>
     </pluginManagement>
