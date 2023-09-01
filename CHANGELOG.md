@@ -3,17 +3,10 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
-## Unreleased
-### Changed
-- Update eclipselink version from 2.7.9 to 3.0.2 [eclipselink release notes](https://www.eclipse.org/eclipselink/releases/3.0.php)
-- Update jackson version from 2.12.4 to 2.13.0 [jackson release notes](https://github.com/FasterXML/jackson/wiki/Jackson-Release-2.13)
-- Update jakarta EE version from 8.0.0 to 10.0.0 [jakarta EE 10 release plan](https://eclipse-ee4j.github.io/jakartaee-platform/jakartaee10/JakartaEE10ReleasePlan)
-- Update JDK target version to 17
-- Update jersey version from 2.34 to 3.0.3 [jersey release notes](https://eclipse-ee4j.github.io/jersey.github.io/release-notes/3.0.3.html)
-- Update microprofile version from 4.1 to 5.0 [microprofile release notes](https://github.com/eclipse/microprofile/releases/tag/5.0)
-- Update snakeyaml version from 1.28 to 1.29 [snakeyaml release notes](https://bitbucket.org/snakeyaml/snakeyaml/wiki/Changes) 
-### Removed
-- javaee artifacts, moving forward only jakartaee is supported
+## unreleased
+### Added
+- sonarcube sonar.host.url and sonar.source default properties
+- sonar-maven-plugin
 
 ## latest
 ### Added
