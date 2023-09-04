@@ -5,7 +5,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## unreleased
 ### Added
-- sonarcube sonar.host.url and sonar.source default properties
+- sonarcube sonar.host.url, sonar.java.binaries, and sonar.source default properties
 - sonar-maven-plugin
 
 ## latest
