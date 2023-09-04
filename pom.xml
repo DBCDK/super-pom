@@ -78,6 +78,7 @@
     <!-- ### sonarqube properties ### -->
     <sonar.host.url>http://sonarqube.dbc.dk</sonar.host.url>
     <sonar.sources>src/main</sonar.sources>
+    <sonar.java.binaries>target</sonar.java.binaries>
   </properties>
 
   <dependencyManagement>
