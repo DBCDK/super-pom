@@ -3,12 +3,12 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
-## unreleased
+## latest
 ### Added
 - sonarcube sonar.host.url, sonar.java.binaries, and sonar.source default properties
 - sonar-maven-plugin
 
-## latest
+## old-202338
 ### Added
 - Add maven-failsafe-plugin dependency
 ### Changed
