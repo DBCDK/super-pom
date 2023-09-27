@@ -76,7 +76,7 @@
     <testcontainers.version>1.17.6</testcontainers.version>
 
     <!-- ### sonarqube properties ### -->
-    <sonar.host.url>http://sonarqube.dbc.dk</sonar.host.url>
+    <sonar.host.url>https://sonarqube.dbc.dk</sonar.host.url>
     <sonar.sources>src/main</sonar.sources>
     <sonar.java.binaries>target</sonar.java.binaries>
   </properties>
