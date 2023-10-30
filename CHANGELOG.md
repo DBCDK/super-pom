@@ -2,6 +2,26 @@
 All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
+ 
+## unreleased
+### Changed
+- Update eclipselink version from 4.0.0 to 4.0.1 [eclipselink release notes](https://www.eclipse.org/eclipselink/releases/4.0.php)
+- Update flyway version from 9.11.0 9.22.3 [flyway release notes](https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html)
+- Update hazelcast version from 5.1.1 to 5.3.1 [hazelcast release notes](https://docs.hazelcast.com/hazelcast/5.3/release-notes/5-3-1)
+- Update jackson version from 2.13.4 to 2.15.0 [jackson release notes](https://github.com/FasterXML/jackson/wiki/Jackson-Release-2.15)
+- Update junit5 version from 5.9.1 to 5.10.0 [junit5 release notes](https://junit.org/junit5/docs/current/release-notes/index.html#release-notes-5.10.0)
+- Update kafka-clients version from 3.3.0 to 3.6.0 [kafka release notes](https://archive.apache.org/dist/kafka/3.6.0/RELEASE_NOTES.html)
+- Update maven-failsafe-plugin version from 3.0.0 to 3.2.1 [release notes](https://github.com/apache/maven-surefire/releases/tag/surefire-3.2.1)
+- Update maven-pmd-plugin version from 3.20.0 to 3.21.0 [release notes](https://maven.apache.org/plugins/maven-pmd-plugin/releasenotes.html#version-3-21-0)
+- Update maven-surefire-plugin version from 3.0.0 to 3.2.1 [release notes](https://github.com/apache/maven-surefire/releases/tag/surefire-3.2.1)
+- Update microprofile version from 5.0 to 6.0 [microprofile release notes](https://github.com/eclipse/microprofile/releases/tag/6.0)
+- Update mockito version from 4.11.0 to 5.6.0 [mockito release notes](https://github.com/mockito/mockito/releases/tag/v5.6.0)
+- Update postgresql driver version from 42.5.1 to 42.6.0 [postgresql release notes](https://jdbc.postgresql.org/changelogs/)
+- Update smallrye-graphql-servlet and smallrye-graphql-ui-graphiql version from 2.0.1 to 2.5.1 [smallrye-graphql](https://smallrye.io/smallrye-graphql)
+- Update snakeyaml version from 1.33 to 2.0 [snakeyaml release notes](https://bitbucket.org/snakeyaml/snakeyaml/wiki/Changes)
+- Update spotbugs-annotations from 4.7.3 to 4.8.0 [spotbugs release notes](https://github.com/spotbugs/spotbugs/releases/tag/4.8.0)
+- Update spotbugs-maven-plugin version 4.7.3.0 to 4.7.3.6 [spotbugs maven plugin release notes](https://github.com/spotbugs/spotbugs-maven-plugin/releases/tag/spotbugs-maven-plugin-4.7.3.6)
+- Update testcontainers version from 1.17.6 to 1.19.1 [testcontainers release notes](https://github.com/testcontainers/testcontainers-java/releases/tag/1.19.1)
 
 ## latest
 ### Added
