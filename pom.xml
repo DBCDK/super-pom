@@ -43,6 +43,7 @@
     <jackson.version>2.15.0</jackson.version>
     <jakartaee.version>10.0.0</jakartaee.version>
     <jakarta-xml-bind.version>4.0.0</jakarta-xml-bind.version>
+    <jcache.version>1.1.1</jcache.version>
     <jersey.version>3.1.0</jersey.version>
     <kafka.version>3.6.0</kafka.version>
     <logback.version>1.2.11</logback.version>
@@ -159,6 +160,12 @@
 
 
       <!-- ### compile/import/runtime scoped dependencies ### -->
+
+      <dependency>
+        <groupId>javax.cache</groupId>
+        <artifactId>cache-api</artifactId>
+        <version>${jcache.version}</version>
+      </dependency>
 
       <!-- Jakarta XML binding -->
       <dependency>
