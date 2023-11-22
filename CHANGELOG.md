@@ -16,7 +16,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - Update maven-failsafe-plugin version from 3.0.0 to 3.2.1 [release notes](https://github.com/apache/maven-surefire/releases/tag/surefire-3.2.1)
 - Update maven-pmd-plugin version from 3.20.0 to 3.21.0 [release notes](https://maven.apache.org/plugins/maven-pmd-plugin/releasenotes.html#version-3-21-0)
 - Update maven-surefire-plugin version from 3.0.0 to 3.2.1 [release notes](https://github.com/apache/maven-surefire/releases/tag/surefire-3.2.1)
-- Update microprofile version from 5.0 to 6.0 [microprofile release notes](https://github.com/eclipse/microprofile/releases/tag/6.0)
+- Update microprofile version from 5.0 to 6.1 [microprofile release notes](https://github.com/eclipse/microprofile/releases/tag/6.1)
 - Update mockito version from 4.11.0 to 5.6.0 [mockito release notes](https://github.com/mockito/mockito/releases/tag/v5.6.0)
 - Update postgresql driver version from 42.5.1 to 42.6.0 [postgresql release notes](https://jdbc.postgresql.org/changelogs/)
 - Update smallrye-graphql-servlet and smallrye-graphql-ui-graphiql version from 2.0.1 to 2.5.1 [smallrye-graphql](https://smallrye.io/smallrye-graphql)
