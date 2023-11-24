@@ -58,7 +58,7 @@
     <microprofile-opentracing-api.version>3.0</microprofile-opentracing-api.version>
     <postgresql-driver.version>42.6.0</postgresql-driver.version>
     <slf4j.version>1.7.36</slf4j.version>
-    <smallrye-graphql.version>2.5.1</smallrye-graphql.version>
+    <smallrye-graphql.version>2.2.3</smallrye-graphql.version>
     <snakeyaml.version>2.0</snakeyaml.version>
 
     <!-- ### test scoped dependencies ### -->

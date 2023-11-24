@@ -19,7 +19,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - Update microprofile version from 5.0 to 6.1 [microprofile release notes](https://github.com/eclipse/microprofile/releases/tag/6.1)
 - Update mockito version from 4.11.0 to 5.6.0 [mockito release notes](https://github.com/mockito/mockito/releases/tag/v5.6.0)
 - Update postgresql driver version from 42.5.1 to 42.6.0 [postgresql release notes](https://jdbc.postgresql.org/changelogs/)
-- Update smallrye-graphql-servlet and smallrye-graphql-ui-graphiql version from 2.0.1 to 2.5.1 [smallrye-graphql](https://smallrye.io/smallrye-graphql)
+- Update smallrye-graphql-servlet and smallrye-graphql-ui-graphiql version from 2.0.1 to 2.2.3 [smallrye-graphql](https://smallrye.io/smallrye-graphql)
 - Update snakeyaml version from 1.33 to 2.0 [snakeyaml release notes](https://bitbucket.org/snakeyaml/snakeyaml/wiki/Changes)
 - Update spotbugs-annotations from 4.7.3 to 4.8.0 [spotbugs release notes](https://github.com/spotbugs/spotbugs/releases/tag/4.8.0)
 - Update spotbugs-maven-plugin version 4.7.3.0 to 4.7.3.6 [spotbugs maven plugin release notes](https://github.com/spotbugs/spotbugs-maven-plugin/releases/tag/spotbugs-maven-plugin-4.7.3.6)
