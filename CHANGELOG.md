@@ -27,6 +27,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## latest
 ### Added
+- payara6 multi-arch (amd64, arm64) docker build
+
+## old-202403
+### Added
 - sonarcube sonar.host.url, sonar.java.binaries, and sonar.source default properties
 - sonar-maven-plugin
 
