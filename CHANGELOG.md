@@ -6,6 +6,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## unreleased
 ### Added
 - Add javax.cache.cache-api dependency
+- Add standalone nashorn-core dependency
 ### Changed
 - Update eclipselink version from 4.0.0 to 4.0.1 [eclipselink release notes](https://www.eclipse.org/eclipselink/releases/4.0.php)
 - Update flyway version from 9.11.0 9.22.3 [flyway release notes](https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html)

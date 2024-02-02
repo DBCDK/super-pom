@@ -299,6 +299,14 @@
         <version>${snakeyaml.version}</version>
       </dependency>
 
+      <!-- Polyglot applications -->
+
+      <!-- Standalone dependency for the legacy nashorn JavaScript engine (removed from the JDK from v15 an onwards)-->
+      <dependency>
+        <groupId>org.openjdk.nashorn</groupId>
+        <artifactId>nashorn-core</artifactId>
+        <version>15.4</version>
+      </dependency>
 
       <!-- ### compile/import scoped dependencies ### -->
 
