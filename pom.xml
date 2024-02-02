@@ -39,6 +39,7 @@
 
     <eclipselink.version>4.0.1</eclipselink.version>
     <flyway.version>9.22.3</flyway.version>
+    <graalvm.polyglot.version>23.1.2</graalvm.polyglot.version>
     <hazelcast.version>5.3.1</hazelcast.version>
     <jackson.version>2.15.0</jackson.version>
     <jakartaee.version>10.0.0</jakartaee.version>
@@ -300,6 +301,19 @@
       </dependency>
 
       <!-- Polyglot applications -->
+
+      <!-- All GraalVM embedded languages are now available as maven dependencies -->
+      <dependency>
+        <groupId>org.graalvm.polyglot</groupId>
+        <artifactId>polyglot</artifactId>
+        <version>${graalvm.polyglot.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.graalvm.polyglot</groupId>
+        <artifactId>js-community</artifactId>
+        <version>${graalvm.polyglot.version}</version>
+        <type>pom</type>
+      </dependency>
 
       <!-- Standalone dependency for the legacy nashorn JavaScript engine (removed from the JDK from v15 an onwards)-->
       <dependency>
