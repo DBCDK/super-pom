@@ -3,7 +3,7 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
  
-## unreleased
+## latest
 ### Added
 - Add javax.cache.cache-api dependency
 - Add polyglot and js-community dependencies for GraalVM JavaScript embedding
@@ -27,7 +27,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - Update spotbugs-maven-plugin version 4.7.3.0 to 4.7.3.6 [spotbugs maven plugin release notes](https://github.com/spotbugs/spotbugs-maven-plugin/releases/tag/spotbugs-maven-plugin-4.7.3.6)
 - Update testcontainers version from 1.17.6 to 1.19.1 [testcontainers release notes](https://github.com/testcontainers/testcontainers-java/releases/tag/1.19.1)
 
-## latest
+## old-202409
 ### Added
 - sonarcube sonar.host.url, sonar.java.binaries, and sonar.source default properties
 - sonar-maven-plugin
