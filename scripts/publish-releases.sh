@@ -22,7 +22,7 @@ read -p "Press enter to continue"
 git checkout master
 git pull
 
-for JDK in java21 java17 java11 java8
+for JDK in java21 java17 java11
 do
   # create -old- branch
   git checkout $JDK
@@ -35,13 +35,6 @@ do
   # update $JDK branch
   git checkout $JDK
   git merge master
-
-  if [[ "$JDK" == "java8" ]]; then
-    # legacy latest version is based on java 8
-    # will be deprecated in the near future
-    git checkout latest
-    git merge $JDK
-  fi
 done
 
 git checkout master
