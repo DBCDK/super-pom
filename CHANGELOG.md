@@ -3,6 +3,32 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+## unreleased
+### Added
+- Add git-commit-id-maven-plugin (replaces git-commit-id-plugin)
+- Add maven-deploy-plugin
+- Add maven-dependency-plugin
+- Add exec-maven-plugin
+- Add maven-resources-plugin
+- Add org.wiremock:wiremock dependency
+### Changed
+- Update hazelcast version from 5.3.1 to 5.3.6 [hazelcast release notes](https://docs.hazelcast.com/hazelcast/5.3/release-notes/5-3-6)
+- Update jackson version from 2.15.0 to 2.17.1 [jackson release notes](https://github.com/FasterXML/jackson/wiki/Jackson-Release-2.17)
+- Update jakarta.xml.bind-api and jaxb-impl version from 4.0.0 to 4.0.1
+- Update jersey version from 3.1.0 to 3.1.5 [jersey release notes](https://github.com/eclipse-ee4j/jersey/releases/tag/3.1.5)
+- Update junit5 version from 5.10.0 to 5.10.3 [junit5 release notes](https://junit.org/junit5/docs/current/release-notes/index.html#release-notes-5.10.3)
+- Update kafka-clients version from 3.6.0 to 3.7.1 [kafka release notes](https://archive.apache.org/dist/kafka/3.7.1/RELEASE_NOTES.html)
+- Update maven-compiler-plugin version from 3.11.0 to 3.13.0 [release notes](https://github.com/apache/maven-compiler-plugin/releases/tag/maven-compiler-plugin-3.13.0)
+- Update maven-enforcer-plugin version from 3.4.1 to 3.5.0
+- Update maven-failsafe-plugin version from 3.2.1 to 3.3.0
+- Update maven-jar-plugin from 3.3.0 to 3.4.2 [maven-jar-plugin release notes](https://github.com/apache/maven-jar-plugin/releases/tag/maven-jar-plugin-3.4.2)
+- Update maven-surefire-plugin version from 3.2.1 to 3.3.0 [release notes](https://github.com/apache/maven-surefire/releases/tag/surefire-3.3.0)
+- Update mockito version from 5.6.0 to 5.12.0 [mockito release notes](https://github.com/mockito/mockito/releases/tag/v5.12.0)
+- Update postgresql driver version from 42.6.0 to 42.7.3 [postgresql release notes](https://jdbc.postgresql.org/changelogs/)
+- Update smallrye-graphql-servlet and smallrye-graphql-ui-graphiql version from 2.2.3 to 2.8.6 [smallrye-graphql](https://smallrye.io/smallrye-graphql)
+- Update snakeyaml version from 2.0 to 2.2 [snakeyaml release notes](https://bitbucket.org/snakeyaml/snakeyaml/wiki/Changes)
+- Update testcontainers version from 1.19.1 to 1.19.8 [testcontainers release notes](https://github.com/testcontainers/testcontainers-java/releases/tag/1.19.8)
+
 ## latest
 - No changes
  
