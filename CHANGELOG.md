@@ -3,7 +3,7 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
-## unreleased
+## latest
 ### Added
 - Add git-commit-id-maven-plugin (replaces git-commit-id-plugin)
 - Add maven-deploy-plugin
@@ -29,7 +29,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - Update snakeyaml version from 2.0 to 2.2 [snakeyaml release notes](https://bitbucket.org/snakeyaml/snakeyaml/wiki/Changes)
 - Update testcontainers version from 1.19.1 to 1.19.8 [testcontainers release notes](https://github.com/testcontainers/testcontainers-java/releases/tag/1.19.8)
 
-## latest
+## old-202437
 - No changes
  
 ## old-202420
