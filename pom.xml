@@ -40,16 +40,16 @@
     <eclipselink.version>4.0.1</eclipselink.version>
     <flyway.version>9.22.3</flyway.version>
     <graalvm.polyglot.version>23.1.2</graalvm.polyglot.version>
-    <hazelcast.version>5.3.1</hazelcast.version>
-    <jackson.version>2.15.0</jackson.version>
+    <hazelcast.version>5.3.6</hazelcast.version>
+    <jackson.version>2.17.1</jackson.version>
     <jakartaee.version>10.0.0</jakartaee.version>
-    <jakarta-xml-bind.version>4.0.0</jakarta-xml-bind.version>
+    <jakarta-xml-bind.version>4.0.1</jakarta-xml-bind.version>
     <jcache.version>1.1.1</jcache.version>
-    <jersey.version>3.1.0</jersey.version>
-    <kafka.version>3.6.0</kafka.version>
+    <jersey.version>3.1.5</jersey.version>
+    <kafka.version>3.7.1</kafka.version>
     <logback.version>1.2.11</logback.version>
     <microprofile.version>6.1</microprofile.version>
-    <microprofile-config-api.version>3.0</microprofile-config-api.version>
+    <microprofile-config-api.version>3.1</microprofile-config-api.version>
     <microprofile-fault-tolerance-api.version>4.0.2</microprofile-fault-tolerance-api.version>
     <microprofile-health-api.version>4.0.1</microprofile-health-api.version>
     <microprofile-metrics-api.version>5.1.0</microprofile-metrics-api.version>
@@ -57,20 +57,23 @@
     <microprofile-openapi-api.version>3.1.1</microprofile-openapi-api.version>
     <microprofile-rest-client-api.version>3.0.1</microprofile-rest-client-api.version>
     <microprofile-opentracing-api.version>3.0</microprofile-opentracing-api.version>
-    <postgresql-driver.version>42.6.0</postgresql-driver.version>
+    <postgresql-driver.version>42.7.3</postgresql-driver.version>
     <slf4j.version>1.7.36</slf4j.version>
-    <smallrye-graphql.version>2.2.3</smallrye-graphql.version>
-    <snakeyaml.version>2.0</snakeyaml.version>
+    <smallrye-graphql.version>2.8.6</smallrye-graphql.version>
+    <snakeyaml.version>2.2</snakeyaml.version>
 
     <!-- ### test scoped dependencies ### -->
 
     <hamcrest.version>2.2</hamcrest.version>
     <junit4.version>4.13.2</junit4.version>
-    <junit5.version>5.10.0</junit5.version>
-    <mockito.version>5.6.0</mockito.version>
+    <junit5.version>5.10.3</junit5.version>
+    <mockito.version>5.12.0</mockito.version>
+    <testcontainers.version>1.19.8</testcontainers.version>
+    <wiremock.version>3.8.0</wiremock.version>
+
+    <!-- spotbugs is to be deprecated in favor of sonarqube -->
     <spotbugs.plugin.version>4.7.3.6</spotbugs.plugin.version>
     <spotbugs.annotations.version>4.8.0</spotbugs.annotations.version>
-    <testcontainers.version>1.19.1</testcontainers.version>
 
     <!-- ### sonarqube properties ### -->
     <sonar.host.url>https://sonarqube.dbc.dk</sonar.host.url>
@@ -404,6 +407,13 @@
       </dependency>
 
       <dependency>
+        <groupId>org.wiremock</groupId>
+        <artifactId>wiremock</artifactId>
+        <version>${wiremock.version}</version>
+        <scope>test</scope>
+      </dependency>
+
+      <dependency>
         <groupId>org.slf4j</groupId>
         <artifactId>slf4j-simple</artifactId>
         <version>${slf4j.version}</version>
@@ -421,9 +431,9 @@
   <build>
     <plugins>
       <plugin>
-        <groupId>pl.project13.maven</groupId>
-        <artifactId>git-commit-id-plugin</artifactId>
-        <version>4.9.10</version>
+        <groupId>io.github.git-commit-id</groupId>
+        <artifactId>git-commit-id-maven-plugin</artifactId>
+        <version>9.0.1</version>
         <executions>
           <execution>
             <id>get-commit-info</id>
@@ -442,7 +452,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-enforcer-plugin</artifactId>
-        <version>3.4.1</version>
+        <version>3.5.0</version>
         <executions>
           <execution>
             <id>enforce</id>
@@ -472,7 +482,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-compiler-plugin</artifactId>
-          <version>3.11.0</version>
+          <version>3.13.0</version>
           <configuration>
             <source>${jdk.target.version}</source>
             <target>${jdk.target.version}</target>
@@ -484,8 +494,28 @@
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-jar-plugin</artifactId>
+          <artifactId>maven-deploy-plugin</artifactId>
+          <version>3.1.2</version>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-dependency-plugin</artifactId>
+          <version>3.7.1</version>
+        </plugin>
+        <plugin>
+          <groupId>org.codehaus.mojo</groupId>
+          <artifactId>exec-maven-plugin</artifactId>
           <version>3.3.0</version>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-resources-plugin</artifactId>
+          <version>3.3.1</version>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-jar-plugin</artifactId>
+          <version>3.4.2</version>
           <configuration>
             <archive>
               <manifest>
@@ -500,12 +530,12 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-surefire-plugin</artifactId>
-          <version>3.2.1</version>
+          <version>3.3.0</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-failsafe-plugin</artifactId>
-          <version>3.2.1</version>
+          <version>3.3.0</version>
           <configuration>
             <redirectTestOutputToFile>true</redirectTestOutputToFile>
           </configuration>
