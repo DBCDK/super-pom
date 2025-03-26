@@ -3,7 +3,7 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
-## latest
+## [Unreleased]
 ### Added
 - flyway-database-postgresql for postgres specific classes
 ### Changed 
@@ -27,7 +27,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - Update maven-pmd-plugin from 3.21.0 to 3.26.0
 - Update sonar-maven-plugin from 3.9.1.2184 to 5.0.0.4389
 
-## old-202514
+## latest
 - No Changes
 
 ## old-202447
