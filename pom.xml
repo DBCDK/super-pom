@@ -3,7 +3,7 @@
 
   <groupId>dk.dbc</groupId>
   <artifactId>super-pom</artifactId>
-  <version>master</version>
+  <version>master-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <distributionManagement>
