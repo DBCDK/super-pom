@@ -4,6 +4,30 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## latest
+### Added
+- flyway-database-postgresql for postgres specific classes
+### Changed 
+- JDK target set to 17
+- Update flyway from 9.22.3 to 11.4.1
+- Update jackson from 2.17.1 to 2.18.2
+- Update jersey from 3.1.5 to 3.1.7
+- Update postgresql-driver from 42.7.3 to 42.7.5
+- Update smallrye-graphql from 2.8.6 to 2.12.2
+- Update snakeyaml from 2.2 to 2.3
+- Update junit5 from 5.10.3 to 5.11.4
+- Update mockito from 5.12.0 to 5.16.1
+- Update testcontainers from 1.19.8 to 1.20.6
+- Update wiremock from 3.8.0 to 3.12.1
+- Update maven-compiler-plugin from 3.13.0 to 3.14.0
+- Update maven-deploy-plugin from 3.1.2 to 3.1.4
+- Update maven-dependency-plugin from 3.7.1 to 3.8.1
+- Update exec-maven-plugin from 3.3.0 to 3.5.0
+- Update maven-surefire-plugin from 3.3.0 to 3.5.2
+- Update maven-failsafe-plugin from 3.3.0 to 3.5.2
+- Update maven-pmd-plugin from 3.21.0 to 3.26.0
+- Update sonar-maven-plugin from 3.9.1.2184 to 5.0.0.4389
+
+## old-202514
 - No Changes
 
 ## old-202447
