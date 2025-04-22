@@ -22,7 +22,7 @@ read -p "Press enter to continue"
 git checkout master
 git pull
 
-for JDK in java21 java17 java11
+for JDK in java17 java11
 do
   # create -old- branch
   git checkout $JDK
