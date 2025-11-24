@@ -3,7 +3,7 @@
 
   <groupId>dk.dbc</groupId>
   <artifactId>super-pom</artifactId>
-  <version>java17-SNAPSHOT</version>
+  <version>java17-old-202548</version>
   <packaging>pom</packaging>
 
   <distributionManagement>
