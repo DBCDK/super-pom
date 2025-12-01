@@ -6,6 +6,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## latest
 - No Changes
 
+## old-202549
+- No Changes
+
 ## old-202548
 ### Added
 - flyway-database-postgresql for postgres specific classes
