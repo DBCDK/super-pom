@@ -492,7 +492,7 @@
             </goals>
             <configuration>
               <includeTestScope>true</includeTestScope>
-              <outputName>sbom</outputName>
+              <outputName>sbom-java</outputName>
             </configuration>
           </execution>
         </executions>
