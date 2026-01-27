@@ -5,6 +5,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## latest
 - Force generation of SBOMs using cyclonedx-maven-plugin
+- Set skipNotDeployed=false for cyclonedx-maven-plugin
 
 ## old-202549
 - No Changes
