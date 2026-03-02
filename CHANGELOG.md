@@ -3,6 +3,9 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+## [Unreleased]
+ - upgrade testcontainers from 1.20.6 to 1.21.4 
+
 ## latest
 - Force generation of SBOMs using cyclonedx-maven-plugin
 - Set skipNotDeployed=false for cyclonedx-maven-plugin
