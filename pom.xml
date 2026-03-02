@@ -36,6 +36,7 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <jdk.target.version>21</jdk.target.version>
+    <maven.compiler.release>${jdk.target.version}</maven.compiler.release>
 
     <eclipselink.version>4.0.1</eclipselink.version>
     <flyway.version>11.4.1</flyway.version>
@@ -499,6 +500,25 @@
           </execution>
         </executions>
       </plugin>
+
+      <plugin>
+        <groupId>org.openrewrite.maven</groupId>
+        <artifactId>rewrite-maven-plugin</artifactId>
+        <version>6.30.0</version>
+        <configuration>
+          <exportDatatables>true</exportDatatables>
+          <activeRecipes>
+            <recipe>org.openrewrite.java.migrate.UpgradeToJava${jdk.target.version}</recipe>
+          </activeRecipes>
+        </configuration>
+        <dependencies>
+          <dependency>
+            <groupId>org.openrewrite.recipe</groupId>
+            <artifactId>rewrite-migrate-java</artifactId>
+            <version>3.28.0</version>
+          </dependency>
+        </dependencies>
+      </plugin>
     </plugins>
 
     <pluginManagement>
@@ -508,8 +528,7 @@
           <artifactId>maven-compiler-plugin</artifactId>
           <version>3.14.0</version>
           <configuration>
-            <source>${jdk.target.version}</source>
-            <target>${jdk.target.version}</target>
+            <release>${jdk.target.version}</release>
             <testSource>${jdk.target.version}</testSource>
             <testTarget>${jdk.target.version}</testTarget>
             <showDeprecation>true</showDeprecation>
