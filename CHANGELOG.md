@@ -3,11 +3,13 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
-## unreleased
-- Force generation of SBOMs using cyclonedx-maven-plugin
+## lastest
+ - upgrade testcontainers from 
+ - add openrewrite recipe for jdk upgrade
 
-## latest
-- No Changes
+## old-202610
+- Force generation of SBOMs using cyclonedx-maven-plugin
+- Set skipNotDeployed=false for cyclonedx-maven-plugin
 
 ## old-202549
 - No Changes
