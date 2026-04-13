@@ -47,7 +47,7 @@
     <jakarta-xml-bind.version>4.0.1</jakarta-xml-bind.version>
     <jcache.version>1.1.1</jcache.version>
     <jersey.version>3.1.7</jersey.version>
-    <kafka.version>3.7.1</kafka.version>
+    <kafka.version>3.9.2</kafka.version>
     <logback.version>1.2.11</logback.version>
     <microprofile.version>6.1</microprofile.version>
     <microprofile-config-api.version>3.1</microprofile-config-api.version>
