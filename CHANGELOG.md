@@ -3,6 +3,47 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+## [Unreleased]
+### Added
+- Add maven-clean-plugin version 3.5.0
+- Add maven-install-plugin version 3.1.4
+- Add maven-javadoc-plugin version 3.12.0
+- Add maven-shade-plugin version 3.6.2
+- Add org.microprofile-ext.openapi-ext:openapi-ui version 2.1.1
+### Changed
+- Replace deprecated nexus repository urls
+- Update eclipselink from 4.0.1 to 4.0.7
+- Update exec-maven-plugin from 3.5.0 to 3.6.3
+- Update flyway from 11.4.1 to 11.20.3 [flyway release notes](https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html)
+- Update git-commit-id-maven-plugin from 9.0.1 to 9.2.0
+- Update hamcrest from 2.2 to 3.0
+- Update hazelcast from 5.3.6 to 5.3.8 [hazelcast release notes](https://docs.hazelcast.com/hazelcast/5.3/release-notes/5-3-8)
+- Update jackson from 2.18.2 to 2.20.0 [jackson release notes](https://github.com/FasterXML/jackson/wiki/Jackson-Release-2.20)
+- Update jakarta.xml.bind-api and jaxb-impl from 4.0.1 to 4.0.4
+- Update jersey from 3.1.7 to 3.1.11 [jersey release notes](https://github.com/eclipse-ee4j/jersey/releases/tag/3.1.11)
+- Update junit from 5.11.4 to 6.0.3 
+- Update kafka-clients from 3.7.1 to 4.2.0 [kafka release notes](https://archive.apache.org/dist/kafka/4.2.0/RELEASE_NOTES.html)
+- Update logback from 1.2.11 to 1.2.13 [logback release notes](https://logback.qos.ch/news.html#1.2.13)
+- Update maven-compiler-plugin from 3.14.0 to 3.15.0
+- Update maven-compiler-plugin configuration, set parameters=true
+- Update maven-dependency-plugin from 3.8.1 to 3.10.0
+- Update maven-enforcer-plugin from 3.5.0 to 3.6.3
+- Update maven-failsafe-plugin from 3.5.2 to 3.5.5
+- Update maven-failsafe-plugin configuration, set system property jna.tmpdir=${project.build.directory}/tmp (for easier nono sandboxing)
+- Update maven-jar-plugin from 3.4.2 to 3.5.0
+- Update maven-resources-plugin from 3.3.1 to 3.5.0
+- Update maven-surefire-plugin from 3.5.2 to 3.5.5
+- Update microprofile-metrics-api from 5.1.0 to 5.1.2
+- Update microprofile-openapi-api from 3.1.1 to 3.1.2
+- Update mockito from 5.16.1 to 5.23.0 [mockito release notes](https://github.com/mockito/mockito/releases/tag/v5.23.0)
+- Update postgresql driver from 42.7.5 to 42.7.11 [postgresql release notes](https://jdbc.postgresql.org/changelogs/)
+- Update rewrite-maven-plugin from 6.30.0 to 6.39.0
+- Update rewrite-migrate-java from 3.28.0 to 3.34.1
+- Update smallrye-graphql-servlet and smallrye-graphql-ui-graphiql from 2.12.2 to 2.18.1
+- Update snakeyaml from 2.3 to 2.5
+- Update sonar-maven-plugin from 5.0.0.4389 to 5.6.0.6792
+- Update wiremock from 3.12.1 to 3.13.2
+
 ## lastest
  - upgrade testcontainers from 
  - add openrewrite recipe for jdk upgrade
