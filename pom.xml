@@ -22,14 +22,14 @@
   <repositories>
     <repository>
       <id>mavenrepo.dbc.dk</id>
-      <url>https://mavenrepo.dbc.dk/nexus/content/groups/public</url>
+      <url>https://mavenrepo.dbc.dk/content/groups/public</url>
     </repository>
   </repositories>
 
   <pluginRepositories>
     <pluginRepository>
       <id>mavenrepo.dbc.dk</id>
-      <url>https://mavenrepo.dbc.dk/nexus/content/groups/public</url>
+      <url>https://mavenrepo.dbc.dk/content/groups/public</url>
     </pluginRepository>
   </pluginRepositories>
 
@@ -38,17 +38,18 @@
     <jdk.target.version>21</jdk.target.version>
     <maven.compiler.release>${jdk.target.version}</maven.compiler.release>
 
-    <eclipselink.version>4.0.1</eclipselink.version>
-    <flyway.version>11.4.1</flyway.version>
+    <eclipselink.version>4.0.7</eclipselink.version>
+    <flyway.version>11.20.3</flyway.version>
     <graalvm.polyglot.version>23.1.2</graalvm.polyglot.version>
-    <hazelcast.version>5.3.6</hazelcast.version>
-    <jackson.version>2.18.2</jackson.version>
+    <hazelcast.version>5.3.8</hazelcast.version>
+    <jackson.version>2.20.0</jackson.version>
+    <jackson-annotations.version>2.20</jackson-annotations.version> <!-- from jackson-bom -->
     <jakartaee.version>10.0.0</jakartaee.version>
-    <jakarta-xml-bind.version>4.0.1</jakarta-xml-bind.version>
+    <jakarta-xml-bind.version>4.0.4</jakarta-xml-bind.version>
     <jcache.version>1.1.1</jcache.version>
-    <jersey.version>3.1.7</jersey.version>
-    <kafka.version>3.7.1</kafka.version>
-    <logback.version>1.2.11</logback.version>
+    <jersey.version>3.1.11</jersey.version>
+    <kafka.version>4.2.0</kafka.version>
+    <logback.version>1.2.13</logback.version>
     <microprofile.version>6.1</microprofile.version>
     <microprofile-config-api.version>3.1</microprofile-config-api.version>
     <microprofile-fault-tolerance-api.version>4.0.2</microprofile-fault-tolerance-api.version>
@@ -56,23 +57,27 @@
     <microprofile-metrics-api.version>5.1.0</microprofile-metrics-api.version>
     <microprofile-jwt-auth-api.version>2.1</microprofile-jwt-auth-api.version>
     <microprofile-openapi-api.version>3.1.1</microprofile-openapi-api.version>
+    <microprofile-ext-openapi-ui.version>2.1.1</microprofile-ext-openapi-ui.version>
     <microprofile-rest-client-api.version>3.0.1</microprofile-rest-client-api.version>
     <microprofile-opentracing-api.version>3.0</microprofile-opentracing-api.version>
-    <postgresql-driver.version>42.7.5</postgresql-driver.version>
+    <postgresql-driver.version>42.7.11</postgresql-driver.version>
     <slf4j.version>1.7.36</slf4j.version>
-    <smallrye-graphql.version>2.12.2</smallrye-graphql.version>
-    <snakeyaml.version>2.3</snakeyaml.version>
+    <smallrye-graphql.version>2.18.1</smallrye-graphql.version>
+    <snakeyaml.version>2.5</snakeyaml.version>
 
     <!-- ### test scoped dependencies ### -->
 
-    <hamcrest.version>2.2</hamcrest.version>
+    <hamcrest.version>3.0</hamcrest.version>
+    <junit.version>6.0.3</junit.version>
     <junit4.version>4.13.2</junit4.version>
-    <junit5.version>5.11.4</junit5.version> <!-- From 5.12.0 - Fails with: TestEngine with ID 'junit-jupiter' failed to discover tests  -->
-    <mockito.version>5.16.1</mockito.version>
+    <!-- The separate junit5 property is kept to avoid breaking existing child projects referencing it -->
+    <junit5.version>5.11.4</junit5.version>
+    <mockito.version>5.23.0</mockito.version>
     <testcontainers.version>1.21.4</testcontainers.version>
-    <wiremock.version>3.12.1</wiremock.version>
+    <wiremock.version>3.13.2</wiremock.version>
 
-    <!-- spotbugs is to be deprecated in favor of sonarqube -->
+    <!-- Deprecated - all static code analysis must be handled by sonarqube going forward.
+         Will be removed in a future release. -->
     <spotbugs.plugin.version>4.7.3.6</spotbugs.plugin.version>
     <spotbugs.annotations.version>4.8.0</spotbugs.annotations.version>
 
@@ -163,6 +168,12 @@
         <scope>provided</scope>
       </dependency>
 
+      <dependency>
+        <groupId>org.microprofile-ext.openapi-ext</groupId>
+        <artifactId>openapi-ui</artifactId>
+        <version>${microprofile-ext-openapi-ui.version}</version>
+      </dependency>
+
 
       <!-- ### compile/import/runtime scoped dependencies ### -->
 
@@ -211,34 +222,11 @@
 
       <!-- Jackson is a high-performance JSON processor (parser, generator) -->
       <dependency>
-        <groupId>com.fasterxml.jackson.core</groupId>
-        <artifactId>jackson-core</artifactId>
+        <groupId>com.fasterxml.jackson</groupId>
+        <artifactId>jackson-bom</artifactId>
         <version>${jackson.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>com.fasterxml.jackson.core</groupId>
-        <artifactId>jackson-annotations</artifactId>
-        <version>${jackson.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>com.fasterxml.jackson.core</groupId>
-        <artifactId>jackson-databind</artifactId>
-        <version>${jackson.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>com.fasterxml.jackson.module</groupId>
-        <artifactId>jackson-module-jaxb-annotations</artifactId>
-        <version>${jackson.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>com.fasterxml.jackson.dataformat</groupId>
-        <artifactId>jackson-dataformat-xml</artifactId>
-        <version>${jackson.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>com.fasterxml.jackson.dataformat</groupId>
-        <artifactId>jackson-dataformat-yaml</artifactId>
-        <version>${jackson.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
       </dependency>
 
       <!-- Jersey is the JAX-RS reference implementation -->
@@ -368,25 +356,25 @@
         <groupId>org.junit</groupId>
         <artifactId>junit-bom</artifactId>
         <type>import</type>
-        <version>${junit5.version}</version>
+        <version>${junit.version}</version>
         <scope>test</scope>
       </dependency>
       <dependency>
         <groupId>org.junit.jupiter</groupId>
         <artifactId>junit-jupiter-api</artifactId>
-        <version>${junit5.version}</version>
+        <version>${junit.version}</version>
         <scope>test</scope>
       </dependency>
       <dependency>
         <groupId>org.junit.jupiter</groupId>
         <artifactId>junit-jupiter-engine</artifactId>
-        <version>${junit5.version}</version>
+        <version>${junit.version}</version>
         <scope>test</scope>
       </dependency>
       <dependency>
         <groupId>org.junit.jupiter</groupId>
         <artifactId>junit-jupiter-params</artifactId>
-        <version>${junit5.version}</version>
+        <version>${junit.version}</version>
         <scope>test</scope>
       </dependency>
 
@@ -426,6 +414,8 @@
         <scope>test</scope>
       </dependency>
 
+      <!-- Deprecated - all static code analysis must be handled by sonarqube going forward.
+           Will be removed in a future release. -->
       <dependency>
         <groupId>com.github.spotbugs</groupId>
         <artifactId>spotbugs-annotations</artifactId>
@@ -439,7 +429,7 @@
       <plugin>
         <groupId>io.github.git-commit-id</groupId>
         <artifactId>git-commit-id-maven-plugin</artifactId>
-        <version>9.0.1</version>
+        <version>9.2.0</version>
         <executions>
           <execution>
             <id>get-commit-info</id>
@@ -458,7 +448,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-enforcer-plugin</artifactId>
-        <version>3.5.0</version>
+        <version>3.6.3</version>
         <executions>
           <execution>
             <id>enforce</id>
@@ -515,7 +505,7 @@
           <dependency>
             <groupId>org.openrewrite.recipe</groupId>
             <artifactId>rewrite-migrate-java</artifactId>
-            <version>3.28.0</version>
+            <version>3.34.1</version>
           </dependency>
         </dependencies>
       </plugin>
@@ -525,14 +515,24 @@
       <plugins>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-clean-plugin</artifactId>
+          <version>3.5.0</version>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-compiler-plugin</artifactId>
-          <version>3.14.0</version>
+          <version>3.15.0</version>
           <configuration>
             <release>${jdk.target.version}</release>
             <testSource>${jdk.target.version}</testSource>
             <testTarget>${jdk.target.version}</testTarget>
             <showDeprecation>true</showDeprecation>
             <showWarnings>true</showWarnings>
+            <!-- Retain method parameter names in bytecode so Jakarta Validation
+                 reports e.g. 'exportSet.batchSize' instead of 'exportSet.arg1'.
+                 This setting should impose no performance penalties, but it will
+                 increase the size of the artifacts.-->
+            <parameters>true</parameters>
           </configuration>
         </plugin>
         <plugin>
@@ -543,22 +543,35 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-dependency-plugin</artifactId>
-          <version>3.8.1</version>
+          <version>3.10.0</version>
         </plugin>
         <plugin>
           <groupId>org.codehaus.mojo</groupId>
           <artifactId>exec-maven-plugin</artifactId>
-          <version>3.5.0</version>
+          <version>3.6.3</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-resources-plugin</artifactId>
-          <version>3.3.1</version>
+          <artifactId>maven-failsafe-plugin</artifactId>
+          <version>3.5.5</version>
+          <configuration>
+            <redirectTestOutputToFile>true</redirectTestOutputToFile>
+            <systemPropertyVariables>
+              <!-- This is a convenience setting to minimize challenges
+                   when attempting to sandbox maven for agentic builds. -->
+              <jna.tmpdir>${project.build.directory}/tmp</jna.tmpdir>
+            </systemPropertyVariables>
+          </configuration>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-install-plugin</artifactId>
+          <version>3.1.4</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-jar-plugin</artifactId>
-          <version>3.4.2</version>
+          <version>3.5.0</version>
           <configuration>
             <archive>
               <manifest>
@@ -572,31 +585,43 @@
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-surefire-plugin</artifactId>
-          <version>3.5.2</version>
+          <artifactId>maven-javadoc-plugin</artifactId>
+          <version>3.12.0</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-failsafe-plugin</artifactId>
-          <version>3.5.2</version>
-          <configuration>
-            <redirectTestOutputToFile>true</redirectTestOutputToFile>
-          </configuration>
+          <artifactId>maven-resources-plugin</artifactId>
+          <version>3.5.0</version>
         </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-surefire-plugin</artifactId>
+          <version>3.5.5</version>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-shade-plugin</artifactId>
+          <version>3.6.2</version>
+        </plugin>
+        <plugin>
+          <groupId>org.sonarsource.scanner.maven</groupId>
+          <artifactId>sonar-maven-plugin</artifactId>
+          <version>5.6.0.6792</version>
+        </plugin>
+
+        <!-- Deprecated - all static code analysis must be handled by sonarqube going forward.
+             Will be removed in a future release. -->
         <plugin>
           <groupId>com.github.spotbugs</groupId>
           <artifactId>spotbugs-maven-plugin</artifactId>
           <version>${spotbugs.plugin.version}</version>
         </plugin>
+        <!-- Deprecated - all static code analysis must be handled by sonarqube going forward.
+             Will be removed in a future release. -->
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-pmd-plugin</artifactId>
           <version>3.26.0</version>
-        </plugin>
-        <plugin>
-          <groupId>org.sonarsource.scanner.maven</groupId>
-          <artifactId>sonar-maven-plugin</artifactId>
-          <version>5.0.0.4389</version>
         </plugin>
       </plugins>
     </pluginManagement>
