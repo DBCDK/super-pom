@@ -49,7 +49,7 @@
     <jcache.version>1.1.1</jcache.version>
     <jersey.version>3.1.11</jersey.version>
     <kafka.version>4.2.0</kafka.version>
-    <logback.version>1.2.13</logback.version>
+    <logback.version>1.5.25</logback.version>
     <microprofile.version>6.1</microprofile.version>
     <microprofile-config-api.version>3.1</microprofile-config-api.version>
     <microprofile-fault-tolerance-api.version>4.0.2</microprofile-fault-tolerance-api.version>
