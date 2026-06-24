@@ -3,6 +3,18 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+## Unreleased
+### Changed
+- Update eclipselink from 4.0.7 to 5.0.0
+- Update jackson from 2.20.0 to 2.21.2 [jackson release notes](https://github.com/FasterXML/jackson/wiki/Jackson-Release-2.21)
+- Update jakarta.jakartaee-api version from 10.0.0 to 11.0.0
+- Update jakarta.xml.bind-api and jaxb-impl from 4.0.4 to 4.0.5
+- Update jersey from 3.1.11 to 4.0.0 [jersey release notes](https://github.com/eclipse-ee4j/jersey/releases/tag/4.0.0)
+- Update microprofile-config-api from 3.1 to 3.1.1
+- Update microprofile-metrics-api from 5.1.0 to 5.1.2
+- Update microprofile-openapi-api from 3.1.1 to 3.1.2
+- Update snakeyaml from 2.5 to 2.6
+
 ## latest
 ### Added
 - Add maven-clean-plugin version 3.5.0
