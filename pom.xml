@@ -3,7 +3,7 @@
 
   <groupId>dk.dbc</groupId>
   <artifactId>super-pom</artifactId>
-  <version>master-SNAPSHOT</version>
+  <version>payara6-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <distributionManagement>
