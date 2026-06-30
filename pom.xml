@@ -49,7 +49,7 @@
     <jcache.version>1.1.1</jcache.version>
     <jersey.version>4.0.0</jersey.version>
     <kafka.version>4.2.0</kafka.version>
-    <logback.version>1.2.13</logback.version>
+    <logback.version>1.5.37</logback.version>
     <microprofile.version>6.1</microprofile.version>
     <microprofile-config-api.version>3.1.1</microprofile-config-api.version>
     <microprofile-fault-tolerance-api.version>4.0.2</microprofile-fault-tolerance-api.version>
@@ -61,7 +61,7 @@
     <microprofile-rest-client-api.version>3.0.1</microprofile-rest-client-api.version>
     <microprofile-opentracing-api.version>3.0</microprofile-opentracing-api.version>
     <postgresql-driver.version>42.7.11</postgresql-driver.version>
-    <slf4j.version>1.7.36</slf4j.version>
+    <slf4j.version>2.0.18</slf4j.version>
     <smallrye-graphql.version>2.18.1</smallrye-graphql.version>
     <snakeyaml.version>2.6</snakeyaml.version>
 
