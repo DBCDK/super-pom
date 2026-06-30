@@ -38,32 +38,32 @@
     <jdk.target.version>21</jdk.target.version>
     <maven.compiler.release>${jdk.target.version}</maven.compiler.release>
 
-    <eclipselink.version>4.0.7</eclipselink.version>
+    <eclipselink.version>5.0.0</eclipselink.version>
     <flyway.version>11.20.3</flyway.version>
     <graalvm.polyglot.version>23.1.2</graalvm.polyglot.version>
     <hazelcast.version>5.3.8</hazelcast.version>
-    <jackson.version>2.20.0</jackson.version>
-    <jackson-annotations.version>2.20</jackson-annotations.version> <!-- from jackson-bom -->
-    <jakartaee.version>10.0.0</jakartaee.version>
-    <jakarta-xml-bind.version>4.0.4</jakarta-xml-bind.version>
+    <jackson.version>2.21.2</jackson.version>
+    <jackson-annotations.version>2.21</jackson-annotations.version> <!-- from jackson-bom -->
+    <jakartaee.version>11.0.0</jakartaee.version>
+    <jakarta-xml-bind.version>4.0.5</jakarta-xml-bind.version>
     <jcache.version>1.1.1</jcache.version>
-    <jersey.version>3.1.11</jersey.version>
+    <jersey.version>4.0.0</jersey.version>
     <kafka.version>4.2.0</kafka.version>
     <logback.version>1.2.13</logback.version>
     <microprofile.version>6.1</microprofile.version>
-    <microprofile-config-api.version>3.1</microprofile-config-api.version>
+    <microprofile-config-api.version>3.1.1</microprofile-config-api.version>
     <microprofile-fault-tolerance-api.version>4.0.2</microprofile-fault-tolerance-api.version>
     <microprofile-health-api.version>4.0.1</microprofile-health-api.version>
-    <microprofile-metrics-api.version>5.1.0</microprofile-metrics-api.version>
+    <microprofile-metrics-api.version>5.1.2</microprofile-metrics-api.version>
     <microprofile-jwt-auth-api.version>2.1</microprofile-jwt-auth-api.version>
-    <microprofile-openapi-api.version>3.1.1</microprofile-openapi-api.version>
+    <microprofile-openapi-api.version>3.1.2</microprofile-openapi-api.version>
     <microprofile-ext-openapi-ui.version>2.1.1</microprofile-ext-openapi-ui.version>
     <microprofile-rest-client-api.version>3.0.1</microprofile-rest-client-api.version>
     <microprofile-opentracing-api.version>3.0</microprofile-opentracing-api.version>
     <postgresql-driver.version>42.7.11</postgresql-driver.version>
     <slf4j.version>1.7.36</slf4j.version>
     <smallrye-graphql.version>2.18.1</smallrye-graphql.version>
-    <snakeyaml.version>2.5</snakeyaml.version>
+    <snakeyaml.version>2.6</snakeyaml.version>
 
     <!-- ### test scoped dependencies ### -->
 
