@@ -60,7 +60,7 @@
     <microprofile-ext-openapi-ui.version>2.1.1</microprofile-ext-openapi-ui.version>
     <microprofile-rest-client-api.version>3.0.1</microprofile-rest-client-api.version>
     <microprofile-opentracing-api.version>3.0</microprofile-opentracing-api.version>
-    <postgresql-driver.version>42.7.11</postgresql-driver.version>
+    <postgresql-driver.version>42.7.12</postgresql-driver.version>
     <slf4j.version>2.0.18</slf4j.version>
     <smallrye-graphql.version>2.18.1</smallrye-graphql.version>
     <snakeyaml.version>2.6</snakeyaml.version>
