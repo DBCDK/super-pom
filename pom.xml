@@ -41,7 +41,7 @@
     <eclipselink.version>5.0.0</eclipselink.version>
     <flyway.version>11.20.3</flyway.version>
     <graalvm.polyglot.version>23.1.2</graalvm.polyglot.version>
-    <hazelcast.version>5.3.8</hazelcast.version>
+    <hazelcast.version>5.7.0</hazelcast.version>
     <jackson.version>2.21.2</jackson.version>
     <jackson-annotations.version>2.21</jackson-annotations.version> <!-- from jackson-bom -->
     <jakartaee.version>11.0.0</jakartaee.version>
