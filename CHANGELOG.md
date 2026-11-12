@@ -7,6 +7,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ### Added
 - Add org.graalvm.polyglot:js dependency, replaces org.graalvm.polyglot:js-community
 ### Changed
+- Change scripts/publish-releases.sh to only merge master into java21-payara7 on bump day. java25, java21, java21-payara6 and java17 only get -old- copies
 - Update eclipselink from 4.0.7 to 5.0.1
 - Update exec-maven-plugin from 3.6.3 to 3.6.4
 - Update graalvm polyglot from 23.1.2 to 25.5.5.0.3
