@@ -25,8 +25,8 @@ pipeline {
 		stage("deploy") {
 		    when {
 				anyOf {
-                    branch "java21"
-                    branch "java21-old-*"
+                    branch "java21-payara6"
+                    branch "java21-payara6-old-*"
                 }
             }
 			steps {
