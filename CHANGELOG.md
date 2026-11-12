@@ -4,18 +4,46 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## Unreleased
+### Added
+- Add org.graalvm.polyglot:js dependency, replaces org.graalvm.polyglot:js-community
 ### Changed
-- Update eclipselink from 4.0.7 to 5.0.0
-- Update jackson from 2.20.0 to 2.21.2 [jackson release notes](https://github.com/FasterXML/jackson/wiki/Jackson-Release-2.21)
+- Update eclipselink from 4.0.7 to 5.0.1
+- Update exec-maven-plugin from 3.6.3 to 3.6.4
+- Update graalvm polyglot from 23.1.2 to 25.5.5.0.3
+- Update hazelcast from 5.3.8 to 5.7.0 [hazelcast release notes](https://docs.hazelcast.com/hazelcast/5.7/release-notes/community)
+- Update jackson from 2.20.0 to 2.22.3 [jackson release notes](https://github.com/FasterXML/jackson/wiki/Jackson-Release-2.22.3)
 - Update jakarta.jakartaee-api version from 10.0.0 to 11.0.0
-- Update jakarta.xml.bind-api and jaxb-impl from 4.0.4 to 4.0.5
-- Update jersey from 3.1.11 to 4.0.0 [jersey release notes](https://github.com/eclipse-ee4j/jersey/releases/tag/4.0.0)
-- Update logback from 1.2.13 to 1.5.37
-- Update microprofile-config-api from 3.1 to 3.1.1
+- Update jakarta.xml.bind-api from 4.0.4 to 4.0.5
+- Update jaxb-impl from 4.0.4 to 4.0.9
+- Update jersey from 3.1.11 to 4.0.2 [jersey release notes](https://github.com/eclipse-ee4j/jersey/releases#release-4.0.2-RELEASE)
+- Update junit from 6.0.3 to 6.1.3
+- Update junit5 from 5.11.4 to 5.14.4
+- Update kafka-clients from 4.2.0 to 4.4.0 [kafka release notes](https://archive.apache.org/dist/kafka/4.4.0/RELEASE_NOTES.html)
+- Update logback from 1.2.13 to 1.6.6
+- Update maven-compiler-plugin from 3.15.0 to 3.16.0
+- Update maven-dependency-plugin from 3.10.0 to 3.11.0
+- Update maven-deploy-plugin from 3.1.4 to 3.2.0
+- Update maven-failsafe-plugin from 3.5.5 to 3.6.1
+- Update maven-install-plugin from 3.1.4 to 3.2.0
+- Update maven-jar-plugin from 3.5.0 to 3.5.1
+- Update maven-surefire-plugin from 3.5.5 to 3.6.1
+- Update microprofile version from 6.1 to 7.1 [microprofile release notes](https://github.com/eclipse/microprofile/releases/tag/7.1)
+- Update microprofile-config-api from 3.1 to 3.1.2
+- Update microprofile-fault-tolerance-api from 4.0.2 to 4.1.2
+- Update microprofile-health-api from 4.0.1 to 4.0.2
 - Update microprofile-metrics-api from 5.1.0 to 5.1.2
-- Update microprofile-openapi-api from 3.1.1 to 3.1.2
-- Update slf4j from 1.7.36 to 2.0.18
-- Update snakeyaml from 2.5 to 2.6
+- Update microprofile-openapi-api from 3.1.1 to 4.1.1
+- Update microprofile-rest-client-api from 3.0.1 to 4.0
+- Update mockito from 5.23.0 to 5.24.0
+- Update postgresql driver from 42.7.11 to 42.7.14 [postgresql release notes](https://jdbc.postgresql.org/changelogs/)
+- Update rewrite-maven-plugin from 6.30.0 to 6.46.1
+- Update rewrite-migrate-java from 3.34.1 to 3.42.2
+- Update slf4j from 1.7.36 to 2.0.19
+- Update smallrye-graphql-servlet and smallrye-graphql-ui-graphiql from 2.18.1 to 2.18.6
+- Update snakeyaml from 2.5 to 2.7
+### Removed
+- Remove deprecated microprofile-opentracing-api
+- Remove deprecated org.graalvm.polyglot:js-community, replaced by org.graalvm.polyglot:js
 
 ## latest
 ### Added
