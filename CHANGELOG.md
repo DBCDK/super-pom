@@ -31,7 +31,6 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - Update microprofile version from 6.1 to 7.1 [microprofile release notes](https://github.com/eclipse/microprofile/releases/tag/7.1)
 - Update microprofile-config-api from 3.1 to 3.1.1
 - Update microprofile-fault-tolerance-api from 4.0.2 to 4.1.2
-- Update microprofile-health-api from 4.0.1 to 4.0.2
 - Update microprofile-metrics-api from 5.1.0 to 5.1.2
 - Update microprofile-openapi-api from 3.1.1 to 4.1.1
 - Update microprofile-rest-client-api from 3.0.1 to 4.0
