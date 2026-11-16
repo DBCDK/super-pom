@@ -8,11 +8,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - Add org.graalvm.polyglot:js dependency, replaces org.graalvm.polyglot:js-community
 ### Changed
 - Change scripts/publish-releases.sh to only merge master into java21-payara7 on bump day. java25, java21, java21-payara6 and java17 only get -old- copies
-- Update eclipselink from 4.0.7 to 5.0.1
+- Update eclipselink from 4.0.7 to 5.0.0
 - Update exec-maven-plugin from 3.6.3 to 3.6.4
 - Update graalvm polyglot from 23.1.2 to 25.5.5.0.3
 - Update hazelcast from 5.3.8 to 5.7.0 [hazelcast release notes](https://docs.hazelcast.com/hazelcast/5.7/release-notes/community)
-- Update jackson from 2.20.0 to 2.22.3 [jackson release notes](https://github.com/FasterXML/jackson/wiki/Jackson-Release-2.22.3)
+- Update jackson from 2.20.0 to 2.22.2 [jackson release notes](https://github.com/FasterXML/jackson/wiki/Jackson-Release-2.22.2)
 - Update jakarta.jakartaee-api version from 10.0.0 to 11.0.0
 - Update jakarta.xml.bind-api from 4.0.4 to 4.0.5
 - Update jaxb-impl from 4.0.4 to 4.0.9
@@ -29,7 +29,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - Update maven-jar-plugin from 3.5.0 to 3.5.1
 - Update maven-surefire-plugin from 3.5.5 to 3.6.1
 - Update microprofile version from 6.1 to 7.1 [microprofile release notes](https://github.com/eclipse/microprofile/releases/tag/7.1)
-- Update microprofile-config-api from 3.1 to 3.1.2
+- Update microprofile-config-api from 3.1 to 3.1.1
 - Update microprofile-fault-tolerance-api from 4.0.2 to 4.1.2
 - Update microprofile-health-api from 4.0.1 to 4.0.2
 - Update microprofile-metrics-api from 5.1.0 to 5.1.2
