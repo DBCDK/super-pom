@@ -3,7 +3,7 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
-## Unreleased
+## latest
 ### Added
 - Add org.graalvm.polyglot:js dependency, replaces org.graalvm.polyglot:js-community
 ### Changed
@@ -45,7 +45,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - Remove deprecated microprofile-opentracing-api
 - Remove deprecated org.graalvm.polyglot:js-community, replaced by org.graalvm.polyglot:js
 
-## latest
+## payara6 (last version)
 ### Added
 - Add maven-clean-plugin version 3.5.0
 - Add maven-install-plugin version 3.1.4
